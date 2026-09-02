@@ -16,21 +16,21 @@ export function Nav() {
         <a href="#/le-kap">{t('nav.kap')}</a>
         <a href="#/puente-cultural">{t('nav.puente')}</a>
         <a href="#join" className="nav-cta">{t('nav.join')}</a>
-        <div className="lang-switch" role="group" aria-label={t('nav.langAria')}>
-          {LANGS.map((l) => (
-            <button
-              key={l.id}
-              type="button"
-              className="lang-btn"
-              aria-pressed={l.id === lang}
-              onClick={() => setLang(l.id)}
-              lang={l.id}
-              title={l.name}
-            >
-              {l.label}
-            </button>
-          ))}
-        </div>
+      </div>
+      <div className="lang-switch" role="group" aria-label={t('nav.langAria')}>
+        {LANGS.map((l) => (
+          <button
+            key={l.id}
+            type="button"
+            className="lang-btn"
+            aria-pressed={l.id === lang}
+            onClick={() => setLang(l.id)}
+            lang={l.id}
+            title={l.name}
+          >
+            {l.label}
+          </button>
+        ))}
       </div>
     </nav>
   )

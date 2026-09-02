@@ -164,6 +164,9 @@ body.no-flags .flags { display: none; }
   gap: 26px;
   font-size: 14px;
   font-weight: 600;
+  /* Le sélecteur de langue est un enfant direct de .nav : cette marge
+     garde liens + langues groupés à droite, comme avant */
+  margin-left: auto;
 }
 
 .nav-links a { color: var(--ink); }
@@ -320,7 +323,7 @@ body.no-flags .flags { display: none; }
 
 .events-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: 24px;
   margin-top: 32px;
 }
@@ -424,7 +427,7 @@ body.no-flags .flags { display: none; }
 
 .tables-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 24px;
   margin-top: 30px;
 }
@@ -703,21 +706,75 @@ body.no-flags .flags { display: none; }
 /* ---------- Mobile (the reference design is desktop-first; these only
    scale it down gracefully below 760px) ---------- */
 
-@media (max-width: 760px) {
-  .nav { flex-wrap: wrap; }
-  .nav-links { flex-wrap: wrap; gap: 16px; }
+/* En dessous de ~1060px, la nav à une seule rangée n'a plus la place :
+   deux rangées. Rangée 1 = marque + langues ; rangée 2 = liens en chips,
+   pleine largeur (bord à bord), défilants s'ils dépassent. */
+@media (max-width: 1060px) {
+  .nav { flex-wrap: wrap; row-gap: 4px; column-gap: 12px; padding: 16px 4px 4px; }
 
-  .hero-content { padding: 44px 30px 40px; }
+  /* margin-left auto : reste à droite même quand la rangée 1 se casse
+     en deux (très petits écrans) */
+  .lang-switch { order: 2; margin-left: auto; }
+
+  .nav-links {
+    order: 3;
+    margin: 0 -32px; /* 28px container + 4px nav = bord de l'écran */
+    width: calc(100% + 64px);
+    box-sizing: border-box;
+    padding: 10px 32px 12px;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { flex: none; white-space: nowrap; }
+  /* Le CTA passe en tête de rangée : l'action principale reste visible
+     sans faire défiler (l'ordre DOM, lui, ne change pas) */
+  .nav-cta { order: -1; padding: 9px 18px; }
+}
+
+@media (max-width: 760px) {
+  .nav-brand { gap: 8px; }
+  .nav-logo { height: 32px; }
+  .nav-wordmark { font-size: 16px; }
+  .lang-btn { padding: 6px 7px; font-size: 11px; }
+
+  .hero-content { padding: 44px 24px 40px; }
   /* "Louvain‑la‑Neuve" is unbreakable (non-breaking hyphens): scale with
-     the viewport so it never clips inside the hero panel */
-  .hero-title { font-size: clamp(24px, calc((100vw - 116px) * 0.126), 44px); }
+     the viewport so it never clips inside the hero panel
+     (104px = 2×28px container + 2×24px hero-content) */
+  .hero-title { font-size: clamp(24px, calc((100vw - 104px) * 0.126), 44px); }
   .hero-script { font-size: 26px; }
-  .hero-flags { padding: 0 30px 24px; flex-wrap: wrap; gap: 10px; }
+  .hero-copy { font-size: 16px; }
+  .hero-flags { padding: 0 24px 24px; flex-wrap: wrap; gap: 10px; }
 
   .section-title { font-size: 34px; }
 
+  /* Rythme vertical resserré : les 88px du desktop creusent trop de vide
+     sur un petit écran */
+  .section--events { padding-top: 64px; }
+  .section--tables { padding-top: 56px; }
+  .section--kap { padding-top: 64px; }
+  .section--join { padding: 72px 4px 64px; }
+  .separator { margin-top: 56px; }
+
+  .table-card { padding: 22px 20px; gap: 16px; }
+  .table-badge { width: 46px; height: 46px; font-size: 16px; }
+  .table-title { font-size: 21px; }
+
+  .kap-grid { gap: 32px; }
+  .kap-photo { height: 300px; }
+
   .join-panel { padding: 52px 24px 48px; }
-  .join-title { font-size: 34px; }
+  /* "LatinoAmeriKap" est insécable : même recette que .hero-title
+     (104px = 2×28px container + 2×24px join-panel) */
+  .join-title { font-size: clamp(22px, calc((100vw - 104px) * 0.125), 34px); }
+
+  .footer-main { padding: 44px 28px 32px; }
+  .footer-links { gap: 28px; }
+  .footer-bottom { padding: 0 28px 32px; }
 }
 
 /* ============================================================
@@ -870,8 +927,11 @@ body.no-flags .flags { display: none; }
 @media (max-width: 760px) {
   .lk-page { padding-top: 24px; }
   .lk-title { font-size: 36px; }
-  .lk-cards { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
-  .lk-card-name { font-size: 17px; }
+  /* Toujours deux cartes de front : le format lotería est pensé compact,
+     une seule colonne étire la page à l'infini */
+  .lk-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .lk-card-name { font-size: 16px; }
+  .lk-card-meta { font-size: 12px; }
 }
 
 /* ============================================================
