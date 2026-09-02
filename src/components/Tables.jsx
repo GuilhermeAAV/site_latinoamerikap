@@ -1,8 +1,9 @@
-import { TABLES } from '../data/events.js'
+import { useContent } from '../content.jsx'
 import { useLang } from '../i18n.jsx'
 
 export function Tables() {
   const { t, tr } = useLang()
+  const { tables } = useContent()
 
   return (
     <section id="tables" className="section section--tables">
@@ -10,7 +11,7 @@ export function Tables() {
       <h2 className="section-title">{t('nav.tables')}</h2>
       <p className="tables-intro">{t('tables.intro')}</p>
       <div className="tables-grid">
-        {TABLES.map((table) => (
+        {tables.map((table) => (
           <article key={table.id} className="table-card">
             <span className="table-badge" aria-hidden="true">{table.badge}</span>
             <div>

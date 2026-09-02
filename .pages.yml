@@ -1,0 +1,249 @@
+# Configuration Pages CMS (https://app.pagescms.org) : les formulaires
+# d'édition du contenu — événements, tables, équipe, carte du puente.
+# Le site lit les fichiers public/content/*.json (voir src/content.jsx).
+# Doc de ce fichier : https://pagescms.org/docs/configuration/
+
+media:
+  input: public/media
+  output: /media
+
+components:
+  # Texte multilingue : le français est obligatoire, il sert de repli
+  # pour les langues laissées vides.
+  texte:
+    type: object
+    fields:
+      - name: fr
+        label: Français
+        type: string
+        required: true
+      - name: es
+        label: Español
+        type: string
+      - name: pt
+        label: Português
+        type: string
+      - name: en
+        label: English
+        type: string
+  # Un nouveau pays demande d'abord son drapeau dans le code
+  # (src/components/Flags.jsx et COUNTRY_NAMES dans src/data/site.js).
+  pays:
+    type: select
+    options:
+      values:
+        - name: colombia
+          label: Colombie
+        - name: mexique
+          label: Mexique
+        - name: argentine
+          label: Argentine
+        - name: bresil
+          label: Brésil
+        - name: perou
+          label: Pérou
+        - name: venezuela
+          label: Venezuela
+        - name: bolivie
+          label: Bolivie
+        - name: chili
+          label: Chili
+        - name: belgique
+          label: Belgique
+
+content:
+  - name: events
+    label: Événements
+    type: file
+    path: public/content/events.json
+    fields:
+      - name: events
+        label: Événements
+        description: Les cartes de la section « événements » de la page d'accueil, dans l'ordre d'affichage. Les couleurs alternent automatiquement.
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "Événement {index} — {place}"
+        fields:
+          - name: title
+            label: Titre
+            component: texte
+          - name: date
+            label: Date affichée
+            description: Texte libre, ex. « Jeu 24 sept · 21h ».
+            component: texte
+          - name: place
+            label: Lieu
+            type: string
+            required: true
+          - name: desc
+            label: Description
+            component: texte
+          - name: image
+            label: Affiche ou photo
+            description: Format paysage ~3:2 de préférence (affichée 160 px de haut).
+            type: image
+
+  - name: tables
+    label: Tables de conversation
+    type: file
+    path: public/content/tables.json
+    fields:
+      - name: tables
+        label: Tables
+        type: object
+        list:
+          collapsible:
+            collapsed: false
+            summary: "{badge}"
+        fields:
+          - name: badge
+            label: Badge
+            description: Deux lettres affichées sur la carte, ex. ES ou PT.
+            type: string
+            required: true
+          - name: title
+            label: Titre
+            component: texte
+          - name: schedule
+            label: Horaire
+            component: texte
+          - name: desc
+            label: Description
+            component: texte
+
+  - name: team
+    label: Équipe (page « le kap »)
+    type: file
+    path: public/content/team.json
+    fields:
+      - name: groupPhoto
+        label: Photo de groupe (page d'accueil)
+        description: À peu près carrée de préférence.
+        type: image
+      - name: members
+        label: Membres
+        description: Le site groupe les membres par « Année académique », la plus récente d'abord. Pour un nouveau comité, ajoutez simplement les membres avec la nouvelle année.
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name} ({year})"
+        fields:
+          - name: name
+            label: Prénom et nom
+            type: string
+            required: true
+          - name: year
+            label: Année académique
+            description: Ex. 2025–2026 — utilisez exactement le même texte pour tout le comité de l'année.
+            type: string
+            required: true
+          - name: carta
+            label: Carte de lotería
+            description: En majuscules, ex. LA PRESIDENTA, EL RUMBERO…
+            type: string
+          - name: role
+            label: Rôle
+            component: texte
+          - name: pole
+            label: Pôle (couleur de la carte)
+            type: select
+            options:
+              values:
+                - name: bureau
+                  label: Bureau
+                - name: fiesta
+                  label: Fiesta & événements
+                - name: cocina
+                  label: Cocina & bar
+                - name: comm
+                  label: Communication
+                - name: tables
+                  label: Tables de conversation
+          - name: origin
+            label: Ville d'origine
+            type: string
+          - name: country
+            label: Pays
+            component: pays
+          - name: photo
+            label: Photo
+            description: Carrée de préférence. Sans photo, le site affiche les initiales.
+            type: image
+
+  - name: puente
+    label: Puente cultural (carte)
+    type: file
+    path: public/content/puente.json
+    fields:
+      - name: contacts
+        label: Points sur la carte
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name} — {origin}"
+        fields:
+          - name: name
+            label: Prénom et nom
+            type: string
+            required: true
+          - name: status
+            label: Statut
+            type: select
+            required: true
+            options:
+              values:
+                - name: actuel
+                  label: Comité actuel
+                - name: alumni
+                  label: Alumni
+          - name: years
+            label: Année(s) de comité
+            description: Affichées sur la fiche, ex. 2025–2026.
+            type: string
+          - name: role
+            label: Rôle
+            component: texte
+          - name: origin
+            label: Ville d'origine
+            type: string
+            required: true
+          - name: country
+            label: Pays
+            component: pays
+          - name: lat
+            label: Latitude
+            description: Clic droit sur la ville dans Google Maps → les deux nombres s'affichent en haut du menu. Le premier est la latitude.
+            type: number
+            required: true
+          - name: lng
+            label: Longitude
+            description: Le second nombre dans Google Maps.
+            type: number
+            required: true
+          - name: phone
+            label: Téléphone
+            description: Format international avec espaces, ex. +32 470 11 22 33.
+            type: string
+          - name: email
+            label: E-mail
+            type: string
+          - name: instagram
+            label: Instagram
+            description: Le pseudo, sans le @.
+            type: string
+          - name: facebook
+            label: Facebook
+            description: La fin de l'adresse facebook.com/…
+            type: string
+          - name: description
+            label: Mini-bio
+            description: Une ou deux phrases — qui c'est, pourquoi le/la contacter.
+            component: texte
+          - name: photo
+            label: Photo
+            description: Carrée de préférence. Sans photo, le site affiche les initiales.
+            type: image

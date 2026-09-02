@@ -1,4 +1,5 @@
-import { EVENTS } from '../data/events.js'
+import { EVENT_PLACEHOLDER } from '../data/placeholders.js'
+import { useContent } from '../content.jsx'
 import { useLang } from '../i18n.jsx'
 
 function EventCard({ event }) {
@@ -7,7 +8,7 @@ function EventCard({ event }) {
   return (
     <article className={`event-card accent-${event.accent}`}>
       <div className="event-media">
-        <img className="img-slot" src={event.imgSrc} alt={tr(event.imgAlt)} width="600" height="400" />
+        <img className="img-slot" src={event.image ?? EVENT_PLACEHOLDER} alt={tr(event.title)} width="600" height="400" />
       </div>
       <div className="event-bar" aria-hidden="true"></div>
       <div className="event-body">
@@ -25,6 +26,7 @@ function EventCard({ event }) {
 
 export function Events() {
   const { t } = useLang()
+  const { events } = useContent()
 
   return (
     <section id="events" className="section section--events">
@@ -36,7 +38,7 @@ export function Events() {
         <p className="section-aside">¡No te lo pierdas!</p>
       </div>
       <div className="events-grid">
-        {EVENTS.map((event) => (
+        {events.map((event) => (
           <EventCard key={event.id} event={event} />
         ))}
       </div>

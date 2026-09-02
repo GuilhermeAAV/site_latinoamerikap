@@ -1,8 +1,10 @@
 import { TEAM_PLACEHOLDER } from '../data/placeholders.js'
+import { useContent } from '../content.jsx'
 import { useLang } from '../i18n.jsx'
 
 export function Kap() {
   const { t } = useLang()
+  const { groupPhoto } = useContent()
 
   return (
     <section id="kap" className="section section--kap">
@@ -21,7 +23,7 @@ export function Kap() {
           <div className="kap-photo">
             <img
               className="img-slot"
-              src={TEAM_PLACEHOLDER}
+              src={groupPhoto ?? TEAM_PLACEHOLDER}
               alt={t('kap.photoAlt')}
               width="840"
               height="840"

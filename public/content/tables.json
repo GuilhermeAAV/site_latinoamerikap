@@ -1,0 +1,36 @@
+{
+  "tables": [
+    {
+      "badge": "ES",
+      "title": { "fr": "Mesa de conversación" },
+      "schedule": {
+        "fr": "Tous les lundis · 19h30",
+        "es": "Todos los lunes · 19.30",
+        "pt": "Toda segunda · 19h30",
+        "en": "Mondays · 7:30 pm"
+      },
+      "desc": {
+        "fr": "Au kot, autour d’un maté ou d’une agua de jamaica. Thème différent chaque semaine.",
+        "es": "En el kot, alrededor de un mate o de un agua de jamaica. Tema diferente cada semana.",
+        "pt": "No kot, em volta de um mate ou de uma água de jamaica. Tema diferente a cada semana.",
+        "en": "At the kot, over a mate or an agua de jamaica. A different theme every week."
+      }
+    },
+    {
+      "badge": "PT",
+      "title": { "fr": "Roda de conversa" },
+      "schedule": {
+        "fr": "Tous les mercredis · 19h30",
+        "es": "Todos los miércoles · 19.30",
+        "pt": "Toda quarta · 19h30",
+        "en": "Wednesdays · 7:30 pm"
+      },
+      "desc": {
+        "fr": "Portugais du Brésil et du Portugal, musique et cafezinho compris. Sem estresse.",
+        "es": "Portugués de Brasil y de Portugal, con música y cafezinho incluidos. Sem estresse.",
+        "pt": "Português do Brasil e de Portugal, com música e cafezinho incluídos. Sem estresse.",
+        "en": "Portuguese from Brazil and Portugal, music and cafezinho included. Sem estresse."
+      }
+    }
+  ]
+}

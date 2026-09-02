@@ -1276,3 +1276,12 @@ body.no-flags .flags { display: none; }
   .pc-map { height: 380px; }
   .pc-guia-title { font-size: 28px; }
 }
+
+/* ---- Erreur de chargement du contenu (voir src/content.jsx) ---- */
+.content-error {
+  margin: 40vh auto 0;
+  max-width: 480px;
+  padding: 0 24px;
+  text-align: center;
+  font-size: 17px;
+}

@@ -1,0 +1,466 @@
+{
+  "contacts": [
+    {
+      "name": "Camila Rodríguez",
+      "status": "actuel",
+      "years": "2025–2026",
+      "role": { "fr": "Co-présidente", "es": "Copresidenta", "pt": "Copresidente", "en": "Co-president" },
+      "origin": "Bogotá",
+      "country": "colombia",
+      "lat": 4.711,
+      "lng": -74.0721,
+      "phone": "+32 470 11 22 33",
+      "email": "camila.rodriguez@latinoamerikap.be",
+      "instagram": "camila.rodz",
+      "facebook": "camila.rodriguez.bta",
+      "description": {
+        "fr": "Co-présidente du kap. Pour toute question sur le kot, les partenariats ou la salsa bien dansée, c’est elle.",
+        "es": "Copresidenta del kap. Para todo lo que sea el kot, colaboraciones o salsa bien bailada, habla con ella.",
+        "pt": "Copresidente do kap. Para qualquer dúvida sobre o kot, parcerias ou salsa bem dançada, é com ela.",
+        "en": "Co-president of the kap. For anything about the kot, partnerships or properly danced salsa, she’s the one."
+      },
+      "photo": null
+    },
+    {
+      "name": "Diego Fernández",
+      "status": "actuel",
+      "years": "2025–2026",
+      "role": { "fr": "Co-président", "es": "Copresidente", "pt": "Copresidente", "en": "Co-president" },
+      "origin": "Mexico",
+      "country": "mexique",
+      "lat": 19.4326,
+      "lng": -99.1332,
+      "phone": "+32 471 22 33 44",
+      "email": "diego.fernandez@latinoamerikap.be",
+      "instagram": "diegofdz.mx",
+      "facebook": null,
+      "description": {
+        "fr": "Co-président. Il gère la vue d’ensemble — et défend l’idée que les tacos ne se mangent jamais avec une fourchette.",
+        "es": "Copresidente. Lleva la visión de conjunto — y defiende que los tacos nunca se comen con tenedor.",
+        "pt": "Copresidente. Cuida da visão geral — e defende que taco nunca se come com garfo.",
+        "en": "Co-president. Keeps the big picture — and insists tacos are never eaten with a fork."
+      },
+      "photo": null
+    },
+    {
+      "name": "Thomas Peeters",
+      "status": "actuel",
+      "years": "2025–2026",
+      "role": { "fr": "Trésorier", "es": "Tesorero", "pt": "Tesoureiro", "en": "Treasurer" },
+      "origin": "Louvain-la-Neuve",
+      "country": "belgique",
+      "lat": 50.6686,
+      "lng": 4.6118,
+      "phone": "+32 472 33 44 55",
+      "email": "thomas.peeters@latinoamerikap.be",
+      "instagram": "thomas.peeters",
+      "facebook": "thomas.peeters.lln",
+      "description": {
+        "fr": "Trésorier. Néo-louvaniste pur jus, tombé amoureux de l’Amérique latine pendant un Erasmus à Medellín.",
+        "es": "Tesorero. Neolovaniense de pura cepa, se enamoró de América Latina durante un Erasmus en Medellín.",
+        "pt": "Tesoureiro. Louvanista da gema, apaixonou-se pela América Latina durante um Erasmus em Medellín.",
+        "en": "Treasurer. Born-and-raised Louvain local who fell in love with Latin America on an Erasmus in Medellín."
+      },
+      "photo": null
+    },
+    {
+      "name": "Valentina Suárez",
+      "status": "actuel",
+      "years": "2025–2026",
+      "role": { "fr": "Secrétaire", "es": "Secretaria", "pt": "Secretária", "en": "Secretary" },
+      "origin": "Lima",
+      "country": "perou",
+      "lat": -12.0464,
+      "lng": -77.0428,
+      "phone": "+32 473 11 22 33",
+      "email": "valentina.suarez@latinoamerikap.be",
+      "instagram": "valen.suarez",
+      "facebook": null,
+      "description": {
+        "fr": "Secrétaire. PV impeccables, mémoire du kap — et meilleure adresse de ceviche entre Lima et Bruxelles.",
+        "es": "Secretaria. Actas impecables, memoria del kap — y la mejor dirección de ceviche entre Lima y Bruselas.",
+        "pt": "Secretária. Atas impecáveis, memória do kap — e o melhor endereço de ceviche entre Lima e Bruxelas.",
+        "en": "Secretary. Flawless minutes, the kap’s memory — and the best ceviche spot between Lima and Brussels."
+      },
+      "photo": null
+    },
+    {
+      "name": "Mateo Álvarez",
+      "status": "actuel",
+      "years": "2025–2026",
+      "role": { "fr": "Resp. événements", "es": "Resp. eventos", "pt": "Resp. eventos", "en": "Events lead" },
+      "origin": "Cali",
+      "country": "colombia",
+      "lat": 3.4516,
+      "lng": -76.532,
+      "phone": "+32 474 22 33 44",
+      "email": "mateo.alvarez@latinoamerikap.be",
+      "instagram": "mateo.baila",
+      "facebook": null,
+      "description": {
+        "fr": "La moitié du duo fiesta. Si la soirée finit en rueda de casino, c’est de sa faute.",
+        "es": "La mitad del dúo fiesta. Si la noche termina en rueda de casino, es culpa suya.",
+        "pt": "Metade da dupla fiesta. Se a noite terminar em rueda de casino, a culpa é dele.",
+        "en": "One half of the fiesta duo. If the night ends in a rueda de casino, blame him."
+      },
+      "photo": null
+    },
+    {
+      "name": "Lucía Herrera",
+      "status": "actuel",
+      "years": "2025–2026",
+      "role": { "fr": "Resp. événements", "es": "Resp. eventos", "pt": "Resp. eventos", "en": "Events lead" },
+      "origin": "Buenos Aires",
+      "country": "argentine",
+      "lat": -34.6037,
+      "lng": -58.3816,
+      "phone": "+32 475 33 44 55",
+      "email": "lucia.herrera@latinoamerikap.be",
+      "instagram": "lu.herrera.ba",
+      "facebook": "lucia.herrera.ba",
+      "description": {
+        "fr": "L’autre moitié du duo fiesta. Milongas, ciné-clubs, quizz : son agenda déborde, écris-lui tôt.",
+        "es": "La otra mitad del dúo fiesta. Milongas, cineclubs, quizzes: su agenda desborda, escríbele pronto.",
+        "pt": "A outra metade da dupla fiesta. Milongas, cineclubes, quizzes: a agenda dela transborda, escreva cedo.",
+        "en": "The other half of the fiesta duo. Milongas, film clubs, quizzes: her agenda overflows — write early."
+      },
+      "photo": null
+    },
+    {
+      "name": "Ana Beatriz Costa",
+      "status": "actuel",
+      "years": "2025–2026",
+      "role": { "fr": "Resp. cuisine", "es": "Resp. cocina", "pt": "Resp. cozinha", "en": "Kitchen lead" },
+      "origin": "São Paulo",
+      "country": "bresil",
+      "lat": -23.5505,
+      "lng": -46.6333,
+      "phone": "+32 476 44 55 66",
+      "email": "ana.costa@latinoamerikap.be",
+      "instagram": "anabia.cozinha",
+      "facebook": null,
+      "description": {
+        "fr": "Resp. cuisine. Ses soirées feijoada affichent complet en deux jours — contacte-la pour proposer un plat.",
+        "es": "Resp. cocina. Sus noches de feijoada se llenan en dos días — contáctala para proponer un plato.",
+        "pt": "Resp. cozinha. Suas noites de feijoada lotam em dois dias — fale com ela para propor um prato.",
+        "en": "Kitchen lead. Her feijoada nights sell out in two days — reach out to suggest a dish."
+      },
+      "photo": null
+    },
+    {
+      "name": "Nicolás Vargas",
+      "status": "actuel",
+      "years": "2025–2026",
+      "role": { "fr": "Resp. bar", "es": "Resp. bar", "pt": "Resp. bar", "en": "Bar lead" },
+      "origin": "Caracas",
+      "country": "venezuela",
+      "lat": 10.4806,
+      "lng": -66.9036,
+      "phone": "+32 477 55 66 77",
+      "email": "nicolas.vargas@latinoamerikap.be",
+      "instagram": "nico.vargas.ccs",
+      "facebook": null,
+      "description": {
+        "fr": "Resp. bar. Derrière le comptoir à chaque événement — parle-lui jus tropicaux, guarapo et playlists.",
+        "es": "Resp. bar. Detrás de la barra en cada evento — háblale de jugos tropicales, guarapo y playlists.",
+        "pt": "Resp. bar. Atrás do balcão em todo evento — fale com ele sobre sucos tropicais, guarapo e playlists.",
+        "en": "Bar lead. Behind the counter at every event — talk to him about tropical juices, guarapo and playlists."
+      },
+      "photo": null
+    },
+    {
+      "name": "Emma Dubois",
+      "status": "actuel",
+      "years": "2025–2026",
+      "role": { "fr": "Resp. communication", "es": "Resp. comunicación", "pt": "Resp. comunicação", "en": "Communications lead" },
+      "origin": "Namur",
+      "country": "belgique",
+      "lat": 50.4674,
+      "lng": 4.8718,
+      "phone": "+32 478 66 77 88",
+      "email": "emma.dubois@latinoamerikap.be",
+      "instagram": "emma.dbs",
+      "facebook": "emma.dubois.namur",
+      "description": {
+        "fr": "Resp. communication. C’est elle derrière l’Insta du kap — envoie-lui tes photos d’événements.",
+        "es": "Resp. comunicación. Ella está detrás del Insta del kap — mándale tus fotos de los eventos.",
+        "pt": "Resp. comunicação. É ela por trás do Insta do kap — mande suas fotos dos eventos.",
+        "en": "Communications lead. She runs the kap’s Insta — send her your event photos."
+      },
+      "photo": null
+    },
+    {
+      "name": "Santiago Rojas",
+      "status": "actuel",
+      "years": "2025–2026",
+      "role": { "fr": "Graphisme & affiches", "es": "Diseño y afiches", "pt": "Design e cartazes", "en": "Design & posters" },
+      "origin": "Santiago",
+      "country": "chili",
+      "lat": -33.4489,
+      "lng": -70.6693,
+      "phone": "+32 479 77 88 99",
+      "email": "santiago.rojas@latinoamerikap.be",
+      "instagram": "santi.dibuja",
+      "facebook": null,
+      "description": {
+        "fr": "Graphiste du kap. Les affiches que tu vois partout sur le campus sortent de sa tablette.",
+        "es": "Diseñador del kap. Los afiches que ves por todo el campus salen de su tableta.",
+        "pt": "Designer do kap. Os cartazes que você vê pelo campus saem do tablet dele.",
+        "en": "The kap’s designer. The posters you see all over campus come out of his tablet."
+      },
+      "photo": null
+    },
+    {
+      "name": "Sofía Mendoza",
+      "status": "actuel",
+      "years": "2025–2026",
+      "role": { "fr": "Table espagnole", "es": "Mesa de español", "pt": "Mesa de espanhol", "en": "Spanish table" },
+      "origin": "La Paz",
+      "country": "bolivie",
+      "lat": -16.4897,
+      "lng": -68.1193,
+      "phone": "+32 470 88 99 00",
+      "email": "sofia.mendoza@latinoamerikap.be",
+      "instagram": "sofi.mendoza.lp",
+      "facebook": "sofia.mendoza.lapaz",
+      "description": {
+        "fr": "Anime la table de conversation espagnole. Débutant·es bienvenu·es — elle a une patience d’ange.",
+        "es": "Anima la mesa de conversación en español. Principiantes bienvenidos: tiene una paciencia de ángel.",
+        "pt": "Anima a mesa de conversa em espanhol. Iniciantes bem-vindos — ela tem uma paciência de anjo.",
+        "en": "Hosts the Spanish conversation table. Beginners welcome — she has the patience of an angel."
+      },
+      "photo": null
+    },
+    {
+      "name": "João Almeida",
+      "status": "actuel",
+      "years": "2025–2026",
+      "role": { "fr": "Roda portugaise", "es": "Roda de portugués", "pt": "Roda de português", "en": "Portuguese roda" },
+      "origin": "Rio de Janeiro",
+      "country": "bresil",
+      "lat": -22.9068,
+      "lng": -43.1729,
+      "phone": "+32 471 99 00 11",
+      "email": "joao.almeida@latinoamerikap.be",
+      "instagram": "joao.carioca",
+      "facebook": null,
+      "description": {
+        "fr": "Anime la roda portugaise. Carioca convaincu : il t’apprendra plus de gírias que de grammaire.",
+        "es": "Anima la roda portuguesa. Carioca convencido: te enseñará más gírias que gramática.",
+        "pt": "Anima a roda de português. Carioca convicto: vai te ensinar mais gíria do que gramática.",
+        "en": "Hosts the Portuguese roda. Proud carioca: he’ll teach you more slang than grammar."
+      },
+      "photo": null
+    },
+    {
+      "name": "Isabela Moreno",
+      "status": "alumni",
+      "years": "2024–2025",
+      "role": { "fr": "Présidente", "es": "Presidenta", "pt": "Presidente", "en": "President" },
+      "origin": "Medellín",
+      "country": "colombia",
+      "lat": 6.2442,
+      "lng": -75.5812,
+      "phone": "+57 300 123 45 67",
+      "email": "isabela.moreno@latinoamerikap.be",
+      "instagram": "isa.moreno.med",
+      "facebook": "isabela.moreno.med",
+      "description": {
+        "fr": "Présidente 2024–2025, aujourd’hui de retour à Medellín. Toujours partante pour aiguiller les nouveaux comités.",
+        "es": "Presidenta 2024–2025, hoy de vuelta en Medellín. Siempre lista para orientar a los nuevos comités.",
+        "pt": "Presidente 2024–2025, hoje de volta a Medellín. Sempre pronta para orientar os novos comitês.",
+        "en": "President 2024–2025, now back in Medellín. Always happy to guide the new committees."
+      },
+      "photo": null
+    },
+    {
+      "name": "Julien Lambert",
+      "status": "alumni",
+      "years": "2024–2025",
+      "role": { "fr": "Trésorier", "es": "Tesorero", "pt": "Tesoureiro", "en": "Treasurer" },
+      "origin": "Bruxelles",
+      "country": "belgique",
+      "lat": 50.8503,
+      "lng": 4.3517,
+      "phone": "+32 472 12 34 56",
+      "email": "julien.lambert@latinoamerikap.be",
+      "instagram": null,
+      "facebook": "julien.lambert.bxl",
+      "description": {
+        "fr": "Trésorier 2024–2025. Travaille à Bruxelles — et repasse au kot dès qu’il y a une feijoada.",
+        "es": "Tesorero 2024–2025. Trabaja en Bruselas — y vuelve al kot en cuanto hay feijoada.",
+        "pt": "Tesoureiro 2024–2025. Trabalha em Bruxelas — e volta ao kot sempre que tem feijoada.",
+        "en": "Treasurer 2024–2025. Works in Brussels — and comes back to the kot whenever there’s feijoada."
+      },
+      "photo": null
+    },
+    {
+      "name": "Renata Oliveira",
+      "status": "alumni",
+      "years": "2024–2025",
+      "role": { "fr": "Secrétaire", "es": "Secretaria", "pt": "Secretária", "en": "Secretary" },
+      "origin": "Belo Horizonte",
+      "country": "bresil",
+      "lat": -19.9167,
+      "lng": -43.9345,
+      "phone": "+32 473 23 45 67",
+      "email": "renata.oliveira@latinoamerikap.be",
+      "instagram": "renata.oli.bh",
+      "facebook": null,
+      "description": {
+        "fr": "Secrétaire 2024–2025, encore en master à l’UCLouvain. Tu la croiseras à la roda portugaise.",
+        "es": "Secretaria 2024–2025, todavía en máster en la UCLouvain. La cruzarás en la roda portuguesa.",
+        "pt": "Secretária 2024–2025, ainda no mestrado na UCLouvain. Você a encontra na roda de português.",
+        "en": "Secretary 2024–2025, still doing her master’s at UCLouvain. You’ll cross paths at the Portuguese roda."
+      },
+      "photo": null
+    },
+    {
+      "name": "Andrés Quispe",
+      "status": "alumni",
+      "years": "2024–2025",
+      "role": { "fr": "Resp. événements", "es": "Resp. eventos", "pt": "Resp. eventos", "en": "Events lead" },
+      "origin": "Cusco",
+      "country": "perou",
+      "lat": -13.532,
+      "lng": -71.9675,
+      "phone": "+51 987 654 321",
+      "email": "andres.quispe@latinoamerikap.be",
+      "instagram": "andes.quispe",
+      "facebook": "andres.quispe.cusco",
+      "description": {
+        "fr": "Resp. événements 2024–2025, rentré à Cusco. Guide officieux du kap pour qui voyage au Pérou.",
+        "es": "Resp. eventos 2024–2025, de regreso en Cusco. Guía extraoficial del kap para quien viaja a Perú.",
+        "pt": "Resp. eventos 2024–2025, de volta a Cusco. Guia extraoficial do kap para quem viaja ao Peru.",
+        "en": "Events lead 2024–2025, back in Cusco. The kap’s unofficial guide for anyone travelling to Peru."
+      },
+      "photo": null
+    },
+    {
+      "name": "Marina López",
+      "status": "alumni",
+      "years": "2024–2025",
+      "role": { "fr": "Resp. événements", "es": "Resp. eventos", "pt": "Resp. eventos", "en": "Events lead" },
+      "origin": "Córdoba",
+      "country": "argentine",
+      "lat": -31.4201,
+      "lng": -64.1888,
+      "phone": "+34 612 34 56 78",
+      "email": "marina.lopez@latinoamerikap.be",
+      "instagram": "marina.lpz",
+      "facebook": null,
+      "description": {
+        "fr": "Resp. événements 2024–2025, en stage à Madrid. Répond toujours aux messages du kap.",
+        "es": "Resp. eventos 2024–2025, de prácticas en Madrid. Siempre responde a los mensajes del kap.",
+        "pt": "Resp. eventos 2024–2025, estagiando em Madri. Sempre responde às mensagens do kap.",
+        "en": "Events lead 2024–2025, interning in Madrid. Always answers the kap’s messages."
+      },
+      "photo": null
+    },
+    {
+      "name": "Gabriel Torres",
+      "status": "alumni",
+      "years": "2024–2025",
+      "role": { "fr": "Resp. cuisine", "es": "Resp. cocina", "pt": "Resp. cozinha", "en": "Kitchen lead" },
+      "origin": "Guadalajara",
+      "country": "mexique",
+      "lat": 20.6597,
+      "lng": -103.3496,
+      "phone": "+52 33 1234 5678",
+      "email": "gabriel.torres@latinoamerikap.be",
+      "instagram": "gabo.cocina",
+      "facebook": "gabriel.torres.gdl",
+      "description": {
+        "fr": "Resp. cuisine 2024–2025, reparti à Guadalajara. Sa recette de pozole est restée dans le classeur du kot.",
+        "es": "Resp. cocina 2024–2025, de vuelta en Guadalajara. Su receta de pozole quedó en el archivo del kot.",
+        "pt": "Resp. cozinha 2024–2025, de volta a Guadalajara. Sua receita de pozole ficou no fichário do kot.",
+        "en": "Kitchen lead 2024–2025, back in Guadalajara. His pozole recipe stayed in the kot’s binder."
+      },
+      "photo": null
+    },
+    {
+      "name": "Laura Vandenberg",
+      "status": "alumni",
+      "years": "2024–2025",
+      "role": { "fr": "Resp. bar", "es": "Resp. bar", "pt": "Resp. bar", "en": "Bar lead" },
+      "origin": "Anvers",
+      "country": "belgique",
+      "lat": 51.2194,
+      "lng": 4.4025,
+      "phone": "+32 474 34 56 78",
+      "email": "laura.vandenberg@latinoamerikap.be",
+      "instagram": "laura.vdb",
+      "facebook": null,
+      "description": {
+        "fr": "Resp. bar 2024–2025. Anversoise — elle revient pour les grandes fiestas.",
+        "es": "Resp. bar 2024–2025. De Amberes — vuelve para las grandes fiestas.",
+        "pt": "Resp. bar 2024–2025. De Antuérpia — volta para as grandes festas.",
+        "en": "Bar lead 2024–2025. From Antwerp — she comes back for the big fiestas."
+      },
+      "photo": null
+    },
+    {
+      "name": "Paula Castillo",
+      "status": "alumni",
+      "years": "2024–2025",
+      "role": { "fr": "Resp. communication", "es": "Resp. comunicación", "pt": "Resp. comunicação", "en": "Communications lead" },
+      "origin": "Valparaíso",
+      "country": "chili",
+      "lat": -33.0472,
+      "lng": -71.6127,
+      "phone": "+56 9 8765 4321",
+      "email": "paula.castillo@latinoamerikap.be",
+      "instagram": "pau.castillo.vlp",
+      "facebook": "paula.castillo.valpo",
+      "description": {
+        "fr": "Resp. communication 2024–2025, de retour à Valparaíso. L’identité visuelle du kap, c’était elle.",
+        "es": "Resp. comunicación 2024–2025, de regreso en Valparaíso. La identidad visual del kap era cosa suya.",
+        "pt": "Resp. comunicação 2024–2025, de volta a Valparaíso. A identidade visual do kap era com ela.",
+        "en": "Communications lead 2024–2025, back in Valparaíso. The kap’s visual identity was her doing."
+      },
+      "photo": null
+    },
+    {
+      "name": "Alejandro Ruiz",
+      "status": "alumni",
+      "years": "2024–2025",
+      "role": { "fr": "Table espagnole", "es": "Mesa de español", "pt": "Mesa de espanhol", "en": "Spanish table" },
+      "origin": "Caracas",
+      "country": "venezuela",
+      "lat": 10.4806,
+      "lng": -66.9036,
+      "phone": "+32 475 45 67 89",
+      "email": "alejandro.ruiz@latinoamerikap.be",
+      "instagram": null,
+      "facebook": "alejandro.ruiz.lln",
+      "description": {
+        "fr": "Animait la table espagnole en 2024–2025. Doctorant à Louvain — toujours dans les parages.",
+        "es": "Animaba la mesa de español en 2024–2025. Doctorando en Lovaina — siempre anda por aquí.",
+        "pt": "Animava a mesa de espanhol em 2024–2025. Doutorando em Louvain — sempre por perto.",
+        "en": "Hosted the Spanish table in 2024–2025. PhD student in Louvain — always around."
+      },
+      "photo": null
+    },
+    {
+      "name": "Beatriz Santos",
+      "status": "alumni",
+      "years": "2024–2025",
+      "role": { "fr": "Roda portugaise", "es": "Roda de portugués", "pt": "Roda de português", "en": "Portuguese roda" },
+      "origin": "Salvador",
+      "country": "bresil",
+      "lat": -12.9777,
+      "lng": -38.5016,
+      "phone": "+55 71 91234 5678",
+      "email": "beatriz.santos@latinoamerikap.be",
+      "instagram": "bia.santos.ssa",
+      "facebook": null,
+      "description": {
+        "fr": "Animait la roda portugaise en 2024–2025. Rentrée à Salvador — échange volontiers sur la Bahia.",
+        "es": "Animaba la roda portuguesa en 2024–2025. De vuelta en Salvador — encantada de hablar de Bahía.",
+        "pt": "Animava a roda de português em 2024–2025. De volta a Salvador — adora falar da Bahia.",
+        "en": "Hosted the Portuguese roda in 2024–2025. Back in Salvador — always glad to talk about Bahia."
+      },
+      "photo": null
+    }
+  ]
+}

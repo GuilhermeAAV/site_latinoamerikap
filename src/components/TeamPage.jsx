@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { POLE_ACCENTS, TEAM_YEARS } from '../data/team.js'
+import { POLE_ACCENTS } from '../data/site.js'
 import { memberPlaceholder } from '../data/placeholders.js'
+import { useContent } from '../content.jsx'
 import { Flag } from './Flags.jsx'
 import { PapelPicado } from './PapelPicado.jsx'
 import { useLang } from '../i18n.jsx'
@@ -14,9 +15,11 @@ const initials = (name) =>
 
 export function TeamPage() {
   const { t, tr } = useLang()
-  const [yearId, setYearId] = useState(TEAM_YEARS[0].id)
-  const year = TEAM_YEARS.find((y) => y.id === yearId) ?? TEAM_YEARS[0]
-  const isCurrent = year.id === TEAM_YEARS[0].id
+  const { teamYears } = useContent()
+  const [yearId, setYearId] = useState(teamYears[0]?.id)
+  const year =
+    teamYears.find((y) => y.id === yearId) ?? teamYears[0] ?? { id: '', label: '', members: [] }
+  const isCurrent = year.id === teamYears[0]?.id
 
   return (
     <main className="lk-page">
@@ -25,7 +28,7 @@ export function TeamPage() {
         <h1 className="section-title lk-title">La familia {year.label}</h1>
         <p className="lk-intro">{t('team.intro')}</p>
         <div className="lk-years" role="group" aria-label={t('team.yearsAria')}>
-          {TEAM_YEARS.map((y) => (
+          {teamYears.map((y) => (
             <button
               key={y.id}
               type="button"

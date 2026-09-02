@@ -1,6 +1,5 @@
-// Inline SVG placeholders shown until real photos are added.
-// To use a real photo, import it and pass it as `src` instead
-// (see src/data/events.js and the team photo in Kap.jsx).
+// Inline SVG placeholders shown when no photo has been uploaded yet
+// via Pages CMS (event posters, team group photo, member portraits).
 
 const svgPlaceholder = (w, h) => {
   const cy = Math.round(h * 0.44)

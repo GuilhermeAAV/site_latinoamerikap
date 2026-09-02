@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
-import { CONTACTS, KOT, COUNTRY_NAMES } from '../data/contacts.js'
+import { KOT, COUNTRY_NAMES } from '../data/site.js'
 import { memberPlaceholder } from '../data/placeholders.js'
+import { useContent } from '../content.jsx'
 import { Flag } from './Flags.jsx'
 import { PapelPicado } from './PapelPicado.jsx'
 import { useLang } from '../i18n.jsx'
@@ -56,6 +57,7 @@ const FILTERS = [
 
 export function PuentePage() {
   const { t, tr } = useLang()
+  const { contacts } = useContent()
   const mapElRef = useRef(null)
   const mapRef = useRef(null)
   const layersRef = useRef({})
@@ -66,10 +68,10 @@ export function PuentePage() {
   const [filter, setFilter] = useState('todos')
 
   const visible = useMemo(
-    () => CONTACTS.filter((c) => filter === 'todos' || c.status === filter),
-    [filter],
+    () => contacts.filter((c) => filter === 'todos' || c.status === filter),
+    [filter, contacts],
   )
-  const selectedContact = CONTACTS.find((c) => c.id === selected) ?? null
+  const selectedContact = contacts.find((c) => c.id === selected) ?? null
 
   useEffect(() => {
     const map = L.map(mapElRef.current, {
@@ -102,7 +104,7 @@ export function PuentePage() {
     const seen = {}
     const layers = {}
 
-    CONTACTS.forEach((c) => {
+    contacts.forEach((c) => {
       const key = c.coords.join(',')
       const dups = (seen[key] = (seen[key] ?? 0) + 1)
       // Deux personnes de la même ville (ou la ville du kot) : on décale
@@ -168,7 +170,7 @@ export function PuentePage() {
       layersRef.current = {}
       groupsRef.current = {}
     }
-  }, [])
+  }, [contacts])
 
   // Filtre : on ajoute/retire le groupe de calques correspondant.
   useEffect(() => {
@@ -179,10 +181,10 @@ export function PuentePage() {
       else group.remove()
     })
     setSelected((prev) => {
-      const c = CONTACTS.find((x) => x.id === prev)
+      const c = contacts.find((x) => x.id === prev)
       return c && filter !== 'todos' && c.status !== filter ? null : prev
     })
-  }, [filter])
+  }, [filter, contacts])
 
   // Sélection : classe sur le pin + l'arc, léger recentrage de la carte.
   useEffect(() => {
@@ -292,18 +294,23 @@ function Ficha({ contact: c }) {
         <p className="pc-card-role">{tr(c.role)}</p>
         <p className="pc-card-origin">
           {c.country && <Flag country={c.country} width={20} height={13} />}
-          {c.origin}, {tr(COUNTRY_NAMES[c.country])}
+          {c.origin}
+          {COUNTRY_NAMES[c.country] && `, ${tr(COUNTRY_NAMES[c.country])}`}
         </p>
         <p className="pc-card-desc">{tr(c.description)}</p>
         <div className="pc-card-contacts">
-          <a href={`tel:${c.phone.replace(/\s/g, '')}`}>
-            <PhoneIcon />
-            {c.phone}
-          </a>
-          <a href={`mailto:${c.email}`}>
-            <MailIcon />
-            {c.email}
-          </a>
+          {c.phone && (
+            <a href={`tel:${c.phone.replace(/\s/g, '')}`}>
+              <PhoneIcon />
+              {c.phone}
+            </a>
+          )}
+          {c.email && (
+            <a href={`mailto:${c.email}`}>
+              <MailIcon />
+              {c.email}
+            </a>
+          )}
           {c.instagram && (
             <a href={`https://instagram.com/${c.instagram}`} target="_blank" rel="noreferrer">
               <InstagramIcon />
