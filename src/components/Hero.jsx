@@ -8,7 +8,7 @@ export function Hero({ showFlags }) {
   return (
     <header id="top" className="hero">
       <div className="hero-glow" aria-hidden="true"></div>
-      <PapelPicado id="pp-hero" />
+      <PapelPicado />
       <div className="hero-content">
         <p className="eyebrow">LatinoAmeriKap · Kap UCLouvain · Louvain-la-Neuve</p>
         <h1 className="hero-title">{t('hero.title')}</h1>

@@ -245,7 +245,7 @@ export function PuentePage() {
         </aside>
       </div>
 
-      <PapelPicado id="pp-puente" className="pc-sep" />
+      <PapelPicado className="pc-sep" />
 
       <section className="pc-guia" aria-label={t('puente.guiaAria')}>
         <p className="eyebrow eyebrow--puente">La guía</p>

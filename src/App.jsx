@@ -70,7 +70,7 @@ export default function App() {
           <>
             <Hero showFlags={CONFIG.showFlags} />
             <Events />
-            <PapelPicado id="pp-sep" className="separator" />
+            <PapelPicado className="separator" />
             <Tables />
             <Kap />
           </>

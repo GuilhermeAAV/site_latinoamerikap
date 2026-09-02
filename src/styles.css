@@ -124,7 +124,25 @@ body.no-flags .flags { display: none; }
   display: block;
 }
 
-.papel-picado { display: block; width: 100%; }
+/* Guirlande de papel picado : le fanion (tuile 50×44) se répète en gardant
+   ses proportions — mask-size auto 100% le met à l'échelle de la hauteur du
+   ruban, jamais de compression horizontale. La couleur vient de currentColor. */
+.papel-picado {
+  display: block;
+  width: 100%;
+  background: currentColor;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='44'%3E%3Crect width='50' height='3'/%3E%3Cpath fill-rule='evenodd' transform='translate(0 2)' d='M1 0 H49 V22 L25 42 L1 22 Z M25 7 a6 6 0 1 0 .01 0 Z M25 24 a3 3 0 1 0 .01 0 Z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='44'%3E%3Crect width='50' height='3'/%3E%3Cpath fill-rule='evenodd' transform='translate(0 2)' d='M1 0 H49 V22 L25 42 L1 22 Z M25 7 a6 6 0 1 0 .01 0 Z M25 24 a3 3 0 1 0 .01 0 Z'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: repeat-x;
+  mask-repeat: repeat-x;
+  -webkit-mask-size: auto 100%;
+  mask-size: auto 100%;
+}
+
+.papel-picado--join {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='44'%3E%3Cpath fill-rule='evenodd' d='M1 0 H49 V22 L25 42 L1 22 Z M25 7 a6 6 0 1 0 .01 0 Z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='44'%3E%3Cpath fill-rule='evenodd' d='M1 0 H49 V22 L25 42 L1 22 Z M25 7 a6 6 0 1 0 .01 0 Z'/%3E%3C/svg%3E");
+}
 
 /* ---------- Nav ---------- */
 

@@ -7,7 +7,7 @@ export function Join({ style = 'sunset' }) {
   return (
     <section id="join" className="section section--join">
       <div className={`join-panel${style === 'crema' ? ' join-panel--crema' : ''}`}>
-        <PapelPicado id="pp-join" variant="join" />
+        <PapelPicado variant="join" />
         <p className="join-script">¿Te unes a la fiesta?</p>
         <h2 className="join-title">{t('join.title')}</h2>
         <p className="join-copy">{t('join.copy')}</p>

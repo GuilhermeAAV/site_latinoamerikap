@@ -46,7 +46,7 @@ export function TeamPage() {
         )}
       </header>
 
-      <PapelPicado id="pp-team" className="lk-sep" />
+      <PapelPicado className="lk-sep" />
 
       <ul className="lk-cards" aria-label={t('team.cardsAria')}>
         {year.members.map((m, i) => (
