@@ -1,0 +1,1278 @@
+/* ============================================================
+   LatinoAmeriKap — Landing page
+   Design tokens & styles (source: design_handoff_latinoamerikap_landing)
+   ============================================================ */
+
+:root {
+  /* Colors */
+  --crema: #FBF3E7;
+  --card-bg: #FFFDF8;
+  --card-border: #E7D6BE;
+  --ink: #2E1B12;
+  --muted: #6B4A38;
+  --warm-white: #FFF7EE;
+  --rojo: #E5372A;
+  --rojo-hover: #B22A20;
+  --naranja: #F4772E;
+  --amarillo: #F7C948;
+  --fuchsia: #E3315F;
+  --teal: #2FB3C9;
+  --verde: #3FA65A;
+  --purpura: #9B45D6;
+
+  /* Gradients */
+  --sunset: linear-gradient(100deg, #E5372A 0%, #F4772E 45%, #F7C948 100%);
+  --sunset-join: linear-gradient(115deg, #E5372A 0%, #9B45D6 100%);
+
+  /* Type */
+  --font-display: 'Bricolage Grotesque', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-accent: 'Caveat', cursive;
+
+  /* Shadows (warm brown, never gray) */
+  --shadow-card: 0 10px 30px rgba(120, 60, 20, .10);
+  --shadow-card-hover: 0 16px 36px rgba(120, 60, 20, .16);
+  --shadow-panel: 0 18px 44px rgba(120, 60, 20, .18);
+}
+
+/* ---------- Base ---------- */
+
+body {
+  margin: 0;
+  background: var(--crema);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--rojo); text-decoration: none; }
+a:hover { color: var(--rojo-hover); text-decoration: underline; }
+
+/* Early in the sheet so component radii below take precedence over the 6px */
+*:focus-visible {
+  outline: 3px solid var(--purpura);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+::selection { background: var(--amarillo); color: var(--ink); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+/* ---------- Grain overlay (remove with <body class="no-grain">) ---------- */
+
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+body.no-grain .grain { display: none; }
+body.no-flags .flags { display: none; }
+
+/* ---------- Layout ---------- */
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 28px 0;
+}
+
+/* ---------- Shared bits ---------- */
+
+.eyebrow {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin: 10px 0 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 44px;
+  letter-spacing: -0.025em;
+}
+
+.pill {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: filter .15s ease, background-color .15s ease;
+}
+.pill:hover { text-decoration: none; }
+
+.pill--ink { background: var(--ink); color: var(--amarillo); }
+.pill--ink:hover { filter: brightness(1.15); color: var(--amarillo); }
+
+.flag { border-radius: 3px; overflow: hidden; display: block; }
+
+.img-slot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.papel-picado { display: block; width: 100%; }
+
+/* ---------- Nav ---------- */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 22px 4px;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.nav-brand:hover { color: var(--ink); }
+
+.nav-logo {
+  display: block;
+  width: auto;
+  height: 38px;
+}
+
+.nav-wordmark {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-links a { color: var(--ink); }
+.nav-links a:hover { color: var(--ink); }
+
+.nav-cta {
+  background: var(--amarillo);
+  color: var(--ink);
+  padding: 10px 20px;
+  border-radius: 9999px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: filter .15s ease;
+}
+.nav-cta:hover { filter: brightness(1.05); text-decoration: none; color: var(--ink); }
+
+/* Sélecteur de langue (FR · ES · PT · EN) */
+
+.lang-switch {
+  display: flex;
+  gap: 2px;
+  border: 1.5px solid var(--card-border);
+  border-radius: 9999px;
+  padding: 3px;
+}
+
+.lang-btn {
+  border: none;
+  background: transparent;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .04em;
+  color: var(--muted);
+  padding: 5px 9px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color .15s ease, color .15s ease;
+}
+.lang-btn:hover { color: var(--ink); }
+.lang-btn[aria-pressed="true"] { background: var(--ink); color: var(--amarillo); }
+
+/* ---------- Hero ---------- */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 26px;
+  background: var(--sunset);
+  color: var(--warm-white);
+  box-shadow: var(--shadow-panel);
+}
+
+.hero-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(600px 320px at 85% 20%, rgba(255, 247, 238, .28), transparent 70%);
+}
+
+.hero .papel-picado {
+  height: 32px;
+  color: rgba(255, 247, 238, .85);
+  position: relative;
+}
+
+.hero-content {
+  position: relative;
+  padding: 64px 64px 56px;
+  max-width: 760px;
+}
+
+.hero-title {
+  margin: 14px 0 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+
+.hero-script {
+  margin: 18px 0 0;
+  font-family: var(--font-accent);
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--ink);
+}
+
+.hero-copy {
+  margin: 14px 0 0;
+  max-width: 540px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: rgba(255, 247, 238, .95);
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 14px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.pill--outline {
+  background: rgba(255, 247, 238, .16);
+  border: 1.5px solid rgba(255, 247, 238, .6);
+  color: var(--warm-white);
+}
+.pill--outline:hover { background: rgba(255, 247, 238, .28); color: var(--warm-white); }
+
+.hero-flags {
+  position: relative;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 0 64px 26px;
+}
+
+.hero-flags-caption {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 247, 238, .85);
+  margin-left: 6px;
+}
+
+/* ---------- Sections ---------- */
+
+.section { scroll-margin-top: 20px; }
+
+.section--events { padding: 88px 4px 0; }
+.section--tables { padding: 72px 4px 0; }
+.section--kap { padding: 88px 4px 0; }
+.section--join { padding: 96px 4px 88px; }
+
+.section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.section-aside {
+  margin: 0;
+  font-family: var(--font-accent);
+  font-size: 26px;
+  color: var(--rojo);
+}
+
+/* ---------- Events ---------- */
+
+.eyebrow--events { color: var(--fuchsia); }
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.event-card {
+  border-radius: 18px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.event-media { height: 160px; position: relative; }
+
+.event-bar { height: 8px; }
+
+.event-body {
+  padding: 24px 26px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.event-date {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.event-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 26px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.event-place { margin: 0; color: var(--muted); font-size: 15px; }
+
+.event-desc {
+  margin: 2px 0 0;
+  color: var(--ink);
+  font-size: 14.5px;
+  line-height: 1.55;
+  flex: 1;
+}
+
+.event-btn {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--warm-white);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 11px 22px;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: filter .15s ease;
+}
+.event-btn:hover { filter: brightness(1.08); text-decoration: none; color: var(--warm-white); }
+
+/* Accent rotation: fuchsia / verde / púrpura */
+.accent-fuchsia .event-bar, .event-btn.accent-fuchsia { background: var(--fuchsia); }
+.accent-fuchsia .event-date { color: var(--fuchsia); }
+.accent-verde .event-bar, .event-btn.accent-verde { background: var(--verde); }
+.accent-verde .event-date { color: var(--verde); }
+.accent-purpura .event-bar, .event-btn.accent-purpura { background: var(--purpura); }
+.accent-purpura .event-date { color: var(--purpura); }
+
+.events-note { margin: 20px 0 0; font-size: 14px; color: var(--muted); }
+
+/* ---------- Separator ---------- */
+
+.separator {
+  height: 30px;
+  color: var(--fuchsia);
+  margin: 72px 0 0;
+}
+
+/* ---------- Conversation tables ---------- */
+
+.eyebrow--tables { color: var(--teal); }
+
+.tables-intro {
+  margin: 14px 0 0;
+  max-width: 600px;
+  font-size: 16.5px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.tables-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.table-card {
+  border-radius: 18px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow-card);
+  padding: 30px 32px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.table-badge {
+  flex: none;
+  width: 54px;
+  height: 54px;
+  border-radius: 9999px;
+  background: var(--teal);
+  color: var(--warm-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 19px;
+}
+
+.table-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+}
+
+.table-schedule {
+  margin: 6px 0 0;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--teal);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.table-desc {
+  margin: 8px 0 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+/* ---------- Le kap (about) ---------- */
+
+.eyebrow--kap { color: var(--purpura); }
+
+.kap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
+  gap: 44px;
+  align-items: center;
+}
+
+.kap-title { text-wrap: balance; }
+
+.kap-copy {
+  margin: 16px 0 0;
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: var(--ink);
+}
+
+.kap-copy--muted {
+  margin: 12px 0 0;
+  color: var(--muted);
+}
+
+.kap-script {
+  font-family: var(--font-accent);
+  font-size: 24px;
+  color: var(--purpura);
+}
+
+.pill--purpura {
+  margin-top: 24px;
+  background: var(--purpura);
+  color: var(--warm-white);
+  padding: 13px 26px;
+}
+.pill--purpura:hover { filter: brightness(1.1); color: var(--warm-white); }
+
+.kap-photo-wrap { position: relative; }
+
+.kap-photo {
+  position: relative;
+  height: 420px;
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 18px 44px rgba(120, 60, 20, .16);
+  transform: rotate(1.5deg);
+}
+
+.kap-sticker {
+  position: absolute;
+  left: -14px;
+  bottom: -14px;
+  background: var(--amarillo);
+  color: var(--ink);
+  font-family: var(--font-accent);
+  font-weight: 600;
+  font-size: 24px;
+  padding: 8px 20px;
+  border-radius: 9999px;
+  box-shadow: 0 10px 24px rgba(120, 60, 20, .18);
+  transform: rotate(-3deg);
+  pointer-events: none;
+}
+
+/* ---------- Join band ---------- */
+
+.join-panel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 26px;
+  background: var(--sunset-join);
+  color: var(--warm-white);
+  box-shadow: var(--shadow-panel);
+  text-align: center;
+  padding: 64px 40px 58px;
+}
+
+/* Alternative flat style: <div class="join-panel join-panel--crema"> */
+.join-panel--crema {
+  background: #F3E4CE;
+  color: var(--ink);
+}
+
+.join-panel .papel-picado {
+  height: 26px;
+  color: rgba(255, 255, 255, .55);
+  position: absolute;
+  inset: 0 0 auto;
+}
+
+.join-script {
+  margin: 0;
+  font-family: var(--font-accent);
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.join-title {
+  margin: 8px 0 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 48px;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.join-copy {
+  margin: 14px auto 0;
+  max-width: 520px;
+  font-size: 16.5px;
+  line-height: 1.6;
+}
+
+.join-ctas {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.pill--join-outline {
+  background: rgba(255, 255, 255, .22);
+  border: 1.5px solid currentColor;
+  color: var(--warm-white);
+}
+.pill--join-outline:hover { background: rgba(255, 255, 255, .35); color: var(--warm-white); }
+.join-panel--crema .pill--join-outline { color: var(--ink); }
+.join-panel--crema .pill--join-outline:hover { color: var(--ink); }
+
+/* ---------- Footer ---------- */
+
+.footer {
+  background: var(--ink);
+  color: var(--warm-white);
+}
+
+.footer a { color: var(--warm-white); }
+.footer a:hover { color: var(--warm-white); }
+
+.footer-main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 52px 32px 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+/* The emblem is black ink on transparent: invert it to read on the dark footer */
+.footer-logo {
+  display: block;
+  width: auto;
+  height: 54px;
+  filter: invert(1);
+  opacity: .92;
+}
+
+.footer-brand-name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+}
+
+.footer-brand-sub {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: rgba(255, 247, 238, .7);
+  line-height: 1.6;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-bottom {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-flags {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-flags .flag { border-radius: 2px; }
+
+.footer-copyright {
+  margin: 0;
+  font-size: 12.5px;
+  color: rgba(255, 247, 238, .55);
+}
+
+/* ---------- Mobile (the reference design is desktop-first; these only
+   scale it down gracefully below 760px) ---------- */
+
+@media (max-width: 760px) {
+  .nav { flex-wrap: wrap; }
+  .nav-links { flex-wrap: wrap; gap: 16px; }
+
+  .hero-content { padding: 44px 30px 40px; }
+  /* "Louvain‑la‑Neuve" is unbreakable (non-breaking hyphens): scale with
+     the viewport so it never clips inside the hero panel */
+  .hero-title { font-size: clamp(24px, calc((100vw - 116px) * 0.126), 44px); }
+  .hero-script { font-size: 26px; }
+  .hero-flags { padding: 0 30px 24px; flex-wrap: wrap; gap: 10px; }
+
+  .section-title { font-size: 34px; }
+
+  .join-panel { padding: 52px 24px 48px; }
+  .join-title { font-size: 34px; }
+}
+
+/* ============================================================
+   Team page (« Le kap », route #/le-kap)
+   Each member is a lotería card: numbered through the deck,
+   framed in the accent of their pôle.
+   ============================================================ */
+
+.lk-page { padding: 40px 4px 0; }
+
+.lk-head { max-width: 720px; }
+
+.lk-title { font-size: 52px; }
+
+.lk-intro {
+  margin: 16px 0 0;
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.lk-years {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+
+.lk-year {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  border: 1.5px solid var(--card-border);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  transition: border-color .15s ease, background-color .15s ease, color .15s ease;
+}
+.lk-year:hover { border-color: var(--ink); }
+.lk-year[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--amarillo);
+}
+
+.lk-past-note {
+  margin: 18px 0 0;
+  font-family: var(--font-accent);
+  font-size: 23px;
+  color: var(--purpura);
+}
+
+.lk-sep { height: 30px; color: var(--naranja); margin: 48px 0 8px; }
+
+/* Lotería cards — one flat deck; the accent follows the member's rôle */
+
+.lk-cards {
+  list-style: none;
+  margin: 40px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 18px;
+}
+
+.lk-card--rojo { --lk-accent: var(--rojo); }
+.lk-card--fuchsia { --lk-accent: var(--fuchsia); }
+.lk-card--verde { --lk-accent: var(--verde); }
+.lk-card--purpura { --lk-accent: var(--purpura); }
+.lk-card--teal { --lk-accent: var(--teal); }
+
+.lk-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 9px;
+  box-shadow: var(--shadow-card);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.lk-card:hover {
+  transform: translateY(-4px) rotate(-1.2deg);
+  box-shadow: var(--shadow-card-hover);
+}
+.lk-card:nth-child(even):hover { transform: translateY(-4px) rotate(1.2deg); }
+
+.lk-card-frame {
+  height: 100%;
+  box-sizing: border-box;
+  border: 1.5px solid var(--lk-accent);
+  border-radius: 9px;
+  padding: 10px 10px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lk-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lk-card-num {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--lk-accent);
+}
+
+.lk-card-photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 8px;
+  display: block;
+}
+
+.lk-card-carta {
+  margin: 13px 0 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.09em;
+  color: var(--lk-accent);
+  text-align: center;
+}
+
+.lk-card-name {
+  margin: 3px 0 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 19px;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.lk-card-meta {
+  margin: 7px 0 0;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .lk-page { padding-top: 24px; }
+  .lk-title { font-size: 36px; }
+  .lk-cards { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
+  .lk-card-name { font-size: 17px; }
+}
+
+/* ============================================================
+   Puente cultural (route #/puente-cultural)
+   La carte des origines : chaque membre — actuel ou alumni —
+   est relié à Louvain-la-Neuve par un arc, son « puente ».
+   ============================================================ */
+
+.eyebrow--puente { color: var(--naranja); }
+
+.pc-page { padding: 40px 4px 0; }
+
+.pc-title { font-size: 52px; }
+
+.pc-aside { color: var(--naranja); }
+
+.pc-intro {
+  margin: 16px 0 0;
+  max-width: 640px;
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+/* Filtres — même recette que les années du team page (.lk-year) */
+
+.pc-filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+
+.pc-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  border: 1.5px solid var(--card-border);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  transition: border-color .15s ease, background-color .15s ease, color .15s ease;
+}
+.pc-filter:hover { border-color: var(--ink); }
+.pc-filter[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--amarillo);
+}
+
+.pc-filter-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+}
+.pc-filter--actuel .pc-filter-dot { background: var(--rojo); }
+.pc-filter--alumni .pc-filter-dot { background: var(--purpura); }
+
+/* ---------- La carte ---------- */
+
+.pc-map-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 22px;
+  align-items: stretch;
+  margin-top: 34px;
+  scroll-margin-top: 20px;
+}
+
+.pc-map {
+  height: 600px;
+  border-radius: 26px;
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow-panel);
+  background: #EFE0C8; /* pendant le chargement des tuiles */
+  isolation: isolate;  /* garde les calques Leaflet sous le grain */
+}
+
+/* Les tuiles sont réchauffées pour rester dans la palette crema */
+.pc-map .leaflet-tile-pane {
+  filter: sepia(.42) saturate(.62) hue-rotate(-8deg) brightness(1.04);
+}
+
+.pc-map .leaflet-control-zoom {
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  margin: 14px;
+}
+.pc-map .leaflet-control-zoom a {
+  background: var(--card-bg);
+  color: var(--ink);
+  border-bottom-color: var(--card-border);
+}
+.pc-map .leaflet-control-zoom a:hover { background: var(--crema); color: var(--ink); }
+
+.pc-map .leaflet-control-attribution {
+  background: rgba(251, 243, 231, .85);
+  color: var(--muted);
+  font-size: 10px;
+}
+.pc-map .leaflet-control-attribution a { color: var(--muted); }
+
+/* Les pins : rojo = comité actuel, púrpura = alumni.
+   Leaflet positionne l'icône via transform → on scale un span interne. */
+
+.pc-pin-wrap { background: none; border: none; }
+
+.pc-pin {
+  position: absolute;
+  inset: 0;
+  box-sizing: border-box;
+  border-radius: 9999px;
+  border: 2.5px solid var(--warm-white);
+  box-shadow: 0 2px 8px rgba(46, 27, 18, .35);
+  transition: transform .15s ease, border-color .15s ease, opacity .15s ease;
+}
+.pc-pin--actuel { background: var(--rojo); }
+.pc-pin--alumni { background: var(--purpura); }
+
+.pc-pin-wrap:hover .pc-pin,
+.pc-pin-wrap:focus-visible .pc-pin { transform: scale(1.35); }
+
+.pc-pin-wrap.is-sel .pc-pin {
+  transform: scale(1.5);
+  border-color: var(--amarillo);
+  box-shadow: 0 0 0 4px rgba(247, 201, 72, .4), 0 2px 8px rgba(46, 27, 18, .35);
+}
+
+/* Quand quelqu'un est sélectionné, le reste s'efface un peu */
+.pc-has-sel .pc-pin-wrap:not(.is-sel) .pc-pin { opacity: .55; }
+
+/* Les arcs — le « puente » de chaque membre vers le kot */
+
+.pc-arc {
+  stroke: var(--naranja);
+  stroke-width: 1.6;
+  opacity: .5;
+  fill: none;
+  transition: opacity .2s ease;
+}
+.pc-has-sel .pc-arc { opacity: .15; }
+.pc-arc.is-sel {
+  stroke: var(--rojo);
+  stroke-width: 2.6;
+  opacity: .95;
+  stroke-dasharray: 7 9;
+  animation: pc-flow 1s linear infinite;
+}
+@keyframes pc-flow { to { stroke-dashoffset: -16; } }
+
+/* Le kot : sticker amarillo planté sur Louvain-la-Neuve */
+
+.pc-kot-icon { pointer-events: none; }
+
+.pc-kot-dot {
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  border-radius: 9999px;
+  background: var(--amarillo);
+  border: 2.5px solid var(--ink);
+}
+
+/* Le sticker pend à gauche du point : l'Europe est toujours du côté
+   droit de cette carte, l'Atlantique lui laisse la place */
+.pc-kot-sticker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-88%, -145%) rotate(-4deg);
+  background: var(--amarillo);
+  color: var(--ink);
+  font-family: var(--font-accent);
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1.3;
+  padding: 2px 13px;
+  border-radius: 9999px;
+  box-shadow: 0 6px 14px rgba(120, 60, 20, .28);
+  white-space: nowrap;
+}
+
+/* ---------- La ficha (fiche de contact) ---------- */
+
+.pc-ficha { min-width: 0; }
+
+.pc-card {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.pc-card-photo {
+  flex: none;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+}
+
+.pc-card-body {
+  padding: 20px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.pc-chip {
+  align-self: flex-start;
+  margin: 0;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 9999px;
+}
+.pc-chip--actuel { background: rgba(229, 55, 42, .1); color: var(--rojo); }
+.pc-chip--alumni { background: rgba(155, 69, 214, .1); color: var(--purpura); }
+
+.pc-card-name {
+  margin: 12px 0 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 25px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.pc-card-role {
+  margin: 5px 0 0;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--naranja);
+}
+
+.pc-card-origin {
+  margin: 10px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14.5px;
+  color: var(--muted);
+}
+
+.pc-card-desc {
+  margin: 12px 0 0;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--ink);
+  flex: 1;
+}
+
+.pc-card-contacts {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--card-border);
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.pc-card-contacts a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  word-break: break-all;
+}
+.pc-card-contacts svg { flex: none; color: var(--naranja); }
+
+/* État vide : personne n'est encore sélectionné */
+
+.pc-card--empty {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 30px;
+}
+
+.pc-empty-arc { color: var(--naranja); opacity: .8; }
+
+.pc-empty-script {
+  margin: 14px 0 0;
+  font-family: var(--font-accent);
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--naranja);
+}
+
+.pc-empty-copy {
+  margin: 8px 0 0;
+  max-width: 230px;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+/* ---------- La guía (liste des contacts) ---------- */
+
+.pc-sep { height: 30px; color: var(--naranja); margin: 56px 0 0; }
+
+.pc-guia { padding: 48px 0 0; }
+
+.pc-guia-title { font-size: 34px; }
+
+.pc-guia-grid {
+  list-style: none;
+  margin: 26px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 12px;
+}
+
+.pc-guia-item {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--card-bg);
+  border: 1.5px solid var(--card-border);
+  border-radius: 14px;
+  padding: 12px 16px;
+  font-family: var(--font-body);
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease, background-color .15s ease;
+}
+.pc-guia-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+}
+.pc-guia-item[aria-pressed="true"] {
+  border-color: var(--naranja);
+  background: rgba(244, 119, 46, .07);
+}
+
+.pc-guia-dot {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+}
+.pc-guia-dot--actuel { background: var(--rojo); }
+.pc-guia-dot--alumni { background: var(--purpura); }
+
+.pc-guia-text {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pc-guia-name { font-weight: 700; font-size: 15px; }
+
+.pc-guia-meta {
+  font-size: 12.5px;
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ---------- Puente cultural : responsive ---------- */
+
+@media (max-width: 980px) {
+  .pc-map-grid { grid-template-columns: 1fr; }
+  .pc-map { height: 440px; }
+  .pc-card { height: auto; }
+  .pc-card-photo { aspect-ratio: 21 / 9; }
+}
+
+@media (max-width: 760px) {
+  .pc-page { padding-top: 24px; }
+  .pc-title { font-size: 36px; }
+  .pc-map { height: 380px; }
+  .pc-guia-title { font-size: 28px; }
+}
