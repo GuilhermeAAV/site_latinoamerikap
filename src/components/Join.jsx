@@ -13,7 +13,7 @@ export function Join({ style = 'sunset' }) {
         <p className="join-copy">{t('join.copy')}</p>
         <div className="join-ctas">
           <a href="mailto:latinoamerikap@uclouvain.be" className="pill pill--ink">{t('join.cta')}</a>
-          <a href="https://instagram.com" className="pill pill--join-outline">@latinoamerikap</a>
+          <a href="https://www.instagram.com/latinoamerikap/" target="_blank" rel="noreferrer" className="pill pill--join-outline">@latinoamerikap</a>
         </div>
       </div>
     </section>

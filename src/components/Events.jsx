@@ -43,7 +43,7 @@ export function Events() {
         ))}
       </div>
       <p className="events-note">
-        {t('events.notePre')}<a href="#join">Instagram</a>.
+        {t('events.notePre')}<a href="https://www.instagram.com/latinoamerikap/" target="_blank" rel="noreferrer">Instagram</a>.
       </p>
     </section>
   )

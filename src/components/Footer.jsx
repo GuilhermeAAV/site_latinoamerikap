@@ -26,7 +26,7 @@ export function Footer({ showFlags }) {
           </div>
           <div className="footer-col">
             <a href="mailto:latinoamerikap@uclouvain.be">latinoamerikap@uclouvain.be</a>
-            <a href="https://instagram.com">Instagram</a>
+            <a href="https://www.instagram.com/latinoamerikap/" target="_blank" rel="noreferrer">Instagram</a>
             <a href="https://facebook.com">Facebook</a>
           </div>
         </div>
