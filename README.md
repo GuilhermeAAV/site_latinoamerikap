@@ -39,8 +39,8 @@ once — content updates never require their involvement.
 - [src/styles.css](src/styles.css) — all styles; design tokens as CSS custom properties at the top
 - [src/components/](src/components/) — Nav, Hero, Events, Tables, Kap, Join, Footer, plus shared
   [PapelPicado.jsx](src/components/PapelPicado.jsx) (pennant strips) and [Flags.jsx](src/components/Flags.jsx) (flag chips)
-- [src/data/site.js](src/data/site.js) — the fixed data still edited in code: the kot's coordinates,
-  country names, pole accent colors
+- [src/data/site.js](src/data/site.js) — the fixed data still edited in code: the kot's coordinates
+  and country names
 - [src/data/placeholders.js](src/data/placeholders.js) — SVG placeholders shown until photos are uploaded
 
 ## Design flags (from the handoff prototype)

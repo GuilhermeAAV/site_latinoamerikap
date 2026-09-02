@@ -147,21 +147,6 @@ content:
           - name: role
             label: Rôle
             component: texte
-          - name: pole
-            label: Pôle (couleur de la carte)
-            type: select
-            options:
-              values:
-                - name: bureau
-                  label: Bureau
-                - name: fiesta
-                  label: Fiesta & événements
-                - name: cocina
-                  label: Cocina & bar
-                - name: comm
-                  label: Communication
-                - name: tables
-                  label: Tables de conversation
           - name: origin
             label: Ville d'origine
             type: string

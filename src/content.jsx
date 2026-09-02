@@ -55,9 +55,10 @@ const slug = (s) =>
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '')
 
-// Les accents des cartes événements alternent (comme .accent-* dans
-// styles.css) : les éditeurs n'ont pas de couleur à choisir.
+// Les couleurs des cartes alternent (classes .accent-* et .lk-card--*
+// dans styles.css) : les éditeurs n'ont pas de couleur à choisir.
 const EVENT_ACCENTS = ['fuchsia', 'verde', 'purpura']
+const MEMBER_ACCENTS = ['rojo', 'fuchsia', 'verde', 'purpura', 'teal']
 
 function normalize({ events, tables, team, puente }) {
   const seen = new Set()
@@ -89,15 +90,17 @@ function normalize({ events, tables, team, puente }) {
   )
 
   return {
-    events: (events.events ?? []).map((e, i) => ({
-      id: `event-${i}`,
-      title: cleanText(e.title),
-      date: cleanText(e.date),
-      place: e.place || '',
-      desc: cleanText(e.desc),
-      image: mediaUrl(e.image),
-      accent: EVENT_ACCENTS[i % EVENT_ACCENTS.length],
-    })),
+    events: (events.events ?? [])
+      .filter((e) => cleanText(e.title))
+      .map((e, i) => ({
+        id: `event-${i}`,
+        title: cleanText(e.title),
+        date: cleanText(e.date),
+        place: e.place || '',
+        desc: cleanText(e.desc),
+        image: mediaUrl(e.image),
+        accent: EVENT_ACCENTS[i % EVENT_ACCENTS.length],
+      })),
     tables: (tables.tables ?? []).map((t, i) => ({
       id: `table-${i}`,
       badge: t.badge || '',
@@ -111,7 +114,12 @@ function normalize({ events, tables, team, puente }) {
       label,
       members: members
         .filter((m) => m.year === label)
-        .map((m) => ({ ...m, role: cleanText(m.role), photo: mediaUrl(m.photo) })),
+        .map((m, i) => ({
+          ...m,
+          role: cleanText(m.role),
+          photo: mediaUrl(m.photo),
+          accent: MEMBER_ACCENTS[i % MEMBER_ACCENTS.length],
+        })),
     })),
     contacts,
   }

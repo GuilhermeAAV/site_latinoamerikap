@@ -41,8 +41,8 @@ Le badge (ES, PT…), le titre, l'horaire et la description de chaque table.
 
 ### Équipe
 La **photo de groupe** de la page d'accueil, puis la liste des membres :
-nom, année académique, carte de lotería (LA PRESIDENTA…), rôle, pôle
-(qui donne la couleur de la carte), ville, pays et photo. Le site groupe
+nom, année académique, carte de lotería (LA PRESIDENTA…), rôle, ville,
+pays et photo — les couleurs des cartes alternent toutes seules. Le site groupe
 automatiquement par année, la plus récente d'abord — pour un nouveau
 comité, il suffit d'ajouter les membres avec la nouvelle année (ex.
 « 2026–2027 », écrite exactement pareil pour tout le monde).

@@ -5,8 +5,12 @@
       "name": "Camila Rodríguez",
       "year": "2025–2026",
       "carta": "LA PRESIDENTA",
-      "role": { "fr": "Co-présidente", "es": "Copresidenta", "pt": "Copresidente", "en": "Co-president" },
-      "pole": "bureau",
+      "role": {
+        "fr": "Co-présidente",
+        "es": "Copresidenta",
+        "pt": "Copresidente",
+        "en": "Co-president"
+      },
       "origin": "Bogotá",
       "country": "colombia",
       "photo": null
@@ -15,8 +19,12 @@
       "name": "Diego Fernández",
       "year": "2025–2026",
       "carta": "EL PRESIDENTE",
-      "role": { "fr": "Co-président", "es": "Copresidente", "pt": "Copresidente", "en": "Co-president" },
-      "pole": "bureau",
+      "role": {
+        "fr": "Co-président",
+        "es": "Copresidente",
+        "pt": "Copresidente",
+        "en": "Co-president"
+      },
       "origin": "Mexico",
       "country": "mexique",
       "photo": null
@@ -25,8 +33,12 @@
       "name": "Thomas Peeters",
       "year": "2025–2026",
       "carta": "EL TESORERO",
-      "role": { "fr": "Trésorier", "es": "Tesorero", "pt": "Tesoureiro", "en": "Treasurer" },
-      "pole": "bureau",
+      "role": {
+        "fr": "Trésorier",
+        "es": "Tesorero",
+        "pt": "Tesoureiro",
+        "en": "Treasurer"
+      },
       "origin": "Louvain-la-Neuve",
       "country": "belgique",
       "photo": null
@@ -35,8 +47,12 @@
       "name": "Valentina Suárez",
       "year": "2025–2026",
       "carta": "LA SECRETARIA",
-      "role": { "fr": "Secrétaire", "es": "Secretaria", "pt": "Secretária", "en": "Secretary" },
-      "pole": "bureau",
+      "role": {
+        "fr": "Secrétaire",
+        "es": "Secretaria",
+        "pt": "Secretária",
+        "en": "Secretary"
+      },
       "origin": "Lima",
       "country": "perou",
       "photo": null
@@ -45,8 +61,12 @@
       "name": "Mateo Álvarez",
       "year": "2025–2026",
       "carta": "EL RUMBERO",
-      "role": { "fr": "Resp. événements", "es": "Resp. eventos", "pt": "Resp. eventos", "en": "Events lead" },
-      "pole": "fiesta",
+      "role": {
+        "fr": "Resp. événements",
+        "es": "Resp. eventos",
+        "pt": "Resp. eventos",
+        "en": "Events lead"
+      },
       "origin": "Cali",
       "country": "colombia",
       "photo": null
@@ -55,8 +75,12 @@
       "name": "Lucía Herrera",
       "year": "2025–2026",
       "carta": "LA RUMBERA",
-      "role": { "fr": "Resp. événements", "es": "Resp. eventos", "pt": "Resp. eventos", "en": "Events lead" },
-      "pole": "fiesta",
+      "role": {
+        "fr": "Resp. événements",
+        "es": "Resp. eventos",
+        "pt": "Resp. eventos",
+        "en": "Events lead"
+      },
       "origin": "Buenos Aires",
       "country": "argentine",
       "photo": null
@@ -65,8 +89,12 @@
       "name": "Ana Beatriz Costa",
       "year": "2025–2026",
       "carta": "LA COCINERA",
-      "role": { "fr": "Resp. cuisine", "es": "Resp. cocina", "pt": "Resp. cozinha", "en": "Kitchen lead" },
-      "pole": "cocina",
+      "role": {
+        "fr": "Resp. cuisine",
+        "es": "Resp. cocina",
+        "pt": "Resp. cozinha",
+        "en": "Kitchen lead"
+      },
       "origin": "São Paulo",
       "country": "bresil",
       "photo": null
@@ -75,8 +103,12 @@
       "name": "Nicolás Vargas",
       "year": "2025–2026",
       "carta": "EL CANTINERO",
-      "role": { "fr": "Resp. bar", "es": "Resp. bar", "pt": "Resp. bar", "en": "Bar lead" },
-      "pole": "cocina",
+      "role": {
+        "fr": "Resp. bar",
+        "es": "Resp. bar",
+        "pt": "Resp. bar",
+        "en": "Bar lead"
+      },
       "origin": "Caracas",
       "country": "venezuela",
       "photo": null
@@ -85,8 +117,12 @@
       "name": "Emma Dubois",
       "year": "2025–2026",
       "carta": "LA PREGONERA",
-      "role": { "fr": "Resp. communication", "es": "Resp. comunicación", "pt": "Resp. comunicação", "en": "Communications lead" },
-      "pole": "comm",
+      "role": {
+        "fr": "Resp. communication",
+        "es": "Resp. comunicación",
+        "pt": "Resp. comunicação",
+        "en": "Communications lead"
+      },
       "origin": "Namur",
       "country": "belgique",
       "photo": null
@@ -95,8 +131,12 @@
       "name": "Santiago Rojas",
       "year": "2025–2026",
       "carta": "EL PINTOR",
-      "role": { "fr": "Graphisme & affiches", "es": "Diseño y afiches", "pt": "Design e cartazes", "en": "Design & posters" },
-      "pole": "comm",
+      "role": {
+        "fr": "Graphisme & affiches",
+        "es": "Diseño y afiches",
+        "pt": "Design e cartazes",
+        "en": "Design & posters"
+      },
       "origin": "Santiago",
       "country": "chili",
       "photo": null
@@ -105,8 +145,12 @@
       "name": "Sofía Mendoza",
       "year": "2025–2026",
       "carta": "LA PROFE",
-      "role": { "fr": "Table espagnole", "es": "Mesa de español", "pt": "Mesa de espanhol", "en": "Spanish table" },
-      "pole": "tables",
+      "role": {
+        "fr": "Table espagnole",
+        "es": "Mesa de español",
+        "pt": "Mesa de espanhol",
+        "en": "Spanish table"
+      },
       "origin": "La Paz",
       "country": "bolivie",
       "photo": null
@@ -115,8 +159,12 @@
       "name": "João Almeida",
       "year": "2025–2026",
       "carta": "O PROFESSOR",
-      "role": { "fr": "Roda portugaise", "es": "Roda de portugués", "pt": "Roda de português", "en": "Portuguese roda" },
-      "pole": "tables",
+      "role": {
+        "fr": "Roda portugaise",
+        "es": "Roda de portugués",
+        "pt": "Roda de português",
+        "en": "Portuguese roda"
+      },
       "origin": "Rio de Janeiro",
       "country": "bresil",
       "photo": null
@@ -125,8 +173,12 @@
       "name": "Isabela Moreno",
       "year": "2024–2025",
       "carta": "LA PRESIDENTA",
-      "role": { "fr": "Présidente", "es": "Presidenta", "pt": "Presidente", "en": "President" },
-      "pole": "bureau",
+      "role": {
+        "fr": "Présidente",
+        "es": "Presidenta",
+        "pt": "Presidente",
+        "en": "President"
+      },
       "origin": "Medellín",
       "country": "colombia",
       "photo": null
@@ -135,8 +187,12 @@
       "name": "Julien Lambert",
       "year": "2024–2025",
       "carta": "EL TESORERO",
-      "role": { "fr": "Trésorier", "es": "Tesorero", "pt": "Tesoureiro", "en": "Treasurer" },
-      "pole": "bureau",
+      "role": {
+        "fr": "Trésorier",
+        "es": "Tesorero",
+        "pt": "Tesoureiro",
+        "en": "Treasurer"
+      },
       "origin": "Bruxelles",
       "country": "belgique",
       "photo": null
@@ -145,8 +201,12 @@
       "name": "Renata Oliveira",
       "year": "2024–2025",
       "carta": "LA SECRETARIA",
-      "role": { "fr": "Secrétaire", "es": "Secretaria", "pt": "Secretária", "en": "Secretary" },
-      "pole": "bureau",
+      "role": {
+        "fr": "Secrétaire",
+        "es": "Secretaria",
+        "pt": "Secretária",
+        "en": "Secretary"
+      },
       "origin": "Belo Horizonte",
       "country": "bresil",
       "photo": null
@@ -155,8 +215,12 @@
       "name": "Andrés Quispe",
       "year": "2024–2025",
       "carta": "EL RUMBERO",
-      "role": { "fr": "Resp. événements", "es": "Resp. eventos", "pt": "Resp. eventos", "en": "Events lead" },
-      "pole": "fiesta",
+      "role": {
+        "fr": "Resp. événements",
+        "es": "Resp. eventos",
+        "pt": "Resp. eventos",
+        "en": "Events lead"
+      },
       "origin": "Cusco",
       "country": "perou",
       "photo": null
@@ -165,8 +229,12 @@
       "name": "Marina López",
       "year": "2024–2025",
       "carta": "LA RUMBERA",
-      "role": { "fr": "Resp. événements", "es": "Resp. eventos", "pt": "Resp. eventos", "en": "Events lead" },
-      "pole": "fiesta",
+      "role": {
+        "fr": "Resp. événements",
+        "es": "Resp. eventos",
+        "pt": "Resp. eventos",
+        "en": "Events lead"
+      },
       "origin": "Córdoba",
       "country": "argentine",
       "photo": null
@@ -175,8 +243,12 @@
       "name": "Gabriel Torres",
       "year": "2024–2025",
       "carta": "EL COCINERO",
-      "role": { "fr": "Resp. cuisine", "es": "Resp. cocina", "pt": "Resp. cozinha", "en": "Kitchen lead" },
-      "pole": "cocina",
+      "role": {
+        "fr": "Resp. cuisine",
+        "es": "Resp. cocina",
+        "pt": "Resp. cozinha",
+        "en": "Kitchen lead"
+      },
       "origin": "Guadalajara",
       "country": "mexique",
       "photo": null
@@ -185,8 +257,12 @@
       "name": "Laura Vandenberg",
       "year": "2024–2025",
       "carta": "LA CANTINERA",
-      "role": { "fr": "Resp. bar", "es": "Resp. bar", "pt": "Resp. bar", "en": "Bar lead" },
-      "pole": "cocina",
+      "role": {
+        "fr": "Resp. bar",
+        "es": "Resp. bar",
+        "pt": "Resp. bar",
+        "en": "Bar lead"
+      },
       "origin": "Anvers",
       "country": "belgique",
       "photo": null
@@ -195,8 +271,12 @@
       "name": "Paula Castillo",
       "year": "2024–2025",
       "carta": "LA PREGONERA",
-      "role": { "fr": "Resp. communication", "es": "Resp. comunicación", "pt": "Resp. comunicação", "en": "Communications lead" },
-      "pole": "comm",
+      "role": {
+        "fr": "Resp. communication",
+        "es": "Resp. comunicación",
+        "pt": "Resp. comunicação",
+        "en": "Communications lead"
+      },
       "origin": "Valparaíso",
       "country": "chili",
       "photo": null
@@ -205,8 +285,12 @@
       "name": "Alejandro Ruiz",
       "year": "2024–2025",
       "carta": "EL PROFE",
-      "role": { "fr": "Table espagnole", "es": "Mesa de español", "pt": "Mesa de espanhol", "en": "Spanish table" },
-      "pole": "tables",
+      "role": {
+        "fr": "Table espagnole",
+        "es": "Mesa de español",
+        "pt": "Mesa de espanhol",
+        "en": "Spanish table"
+      },
       "origin": "Caracas",
       "country": "venezuela",
       "photo": null
@@ -215,8 +299,12 @@
       "name": "Beatriz Santos",
       "year": "2024–2025",
       "carta": "A PROFESSORA",
-      "role": { "fr": "Roda portugaise", "es": "Roda de portugués", "pt": "Roda de português", "en": "Portuguese roda" },
-      "pole": "tables",
+      "role": {
+        "fr": "Roda portugaise",
+        "es": "Roda de portugués",
+        "pt": "Roda de português",
+        "en": "Portuguese roda"
+      },
       "origin": "Salvador",
       "country": "bresil",
       "photo": null

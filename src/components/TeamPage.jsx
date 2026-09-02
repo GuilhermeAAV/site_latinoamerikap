@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { POLE_ACCENTS } from '../data/site.js'
 import { memberPlaceholder } from '../data/placeholders.js'
 import { useContent } from '../content.jsx'
 import { Flag } from './Flags.jsx'
@@ -51,7 +50,7 @@ export function TeamPage() {
 
       <ul className="lk-cards" aria-label={t('team.cardsAria')}>
         {year.members.map((m, i) => (
-          <li key={m.name} className={`lk-card lk-card--${POLE_ACCENTS[m.pole] ?? 'rojo'}`}>
+          <li key={m.name} className={`lk-card lk-card--${m.accent}`}>
             <div className="lk-card-frame">
               <div className="lk-card-top">
                 <span className="lk-card-num" aria-hidden="true">{i + 1}</span>

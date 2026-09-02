@@ -23,13 +23,3 @@ export const COUNTRY_NAMES = {
   chili: { fr: 'Chili', es: 'Chile', pt: 'Chile', en: 'Chile' },
   belgique: { fr: 'Belgique', es: 'Bélgica', pt: 'Bélgica', en: 'Belgium' },
 }
-
-// Couleur d'accent de chaque carte membre selon le pôle
-// (classes `.lk-card--*` dans styles.css).
-export const POLE_ACCENTS = {
-  bureau: 'rojo',
-  fiesta: 'fuchsia',
-  cocina: 'verde',
-  comm: 'purpura',
-  tables: 'teal',
-}
