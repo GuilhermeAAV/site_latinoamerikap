@@ -201,6 +201,11 @@ body.no-flags .flags { display: none; }
 }
 .nav-cta:hover { filter: brightness(1.05); text-decoration: none; color: var(--ink); }
 
+/* Hamburger + tiroir latéral : mobile uniquement (voir le bloc ≤1060px) */
+.nav-burger,
+.nav-scrim,
+.nav-drawer { display: none; }
+
 /* Sélecteur de langue (FR · ES · PT · EN) */
 
 .lang-switch {
@@ -725,39 +730,125 @@ body.no-flags .flags { display: none; }
    scale it down gracefully below 760px) ---------- */
 
 /* En dessous de ~1060px, la nav à une seule rangée n'a plus la place :
-   deux rangées. Rangée 1 = marque + langues ; rangée 2 = liens en chips,
-   pleine largeur (bord à bord), défilants s'ils dépassent. */
+   hamburger + tiroir latéral. La rangée de liens et le sélecteur de langue
+   du haut disparaissent — on les retrouve dans le tiroir. */
 @media (max-width: 1060px) {
-  .nav { flex-wrap: wrap; row-gap: 4px; column-gap: 12px; padding: 16px 4px 4px; }
+  .nav { padding: 16px 4px; }
+  .nav > .nav-links,
+  .nav > .lang-switch { display: none; }
 
-  /* margin-left auto : reste à droite même quand la rangée 1 se casse
-     en deux (très petits écrans) */
-  .lang-switch { order: 2; margin-left: auto; }
+  body.drawer-open { overflow: hidden; }
 
-  .nav-links {
-    order: 3;
-    margin: 0 -32px; /* 28px container + 4px nav = bord de l'écran */
-    width: calc(100% + 64px);
-    box-sizing: border-box;
-    padding: 10px 32px 12px;
-    gap: 20px;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
+  .nav-burger {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    /* zone de tap ~44px sans gonfler la hauteur de la nav */
+    margin: -10px -10px -10px 0;
+    border-radius: 10px;
   }
-  .nav-links::-webkit-scrollbar { display: none; }
-  .nav-links a { flex: none; white-space: nowrap; }
-  /* Le CTA passe en tête de rangée : l'action principale reste visible
-     sans faire défiler (l'ordre DOM, lui, ne change pas) */
-  .nav-cta { order: -1; padding: 9px 18px; }
+  .nav-burger span {
+    display: block;
+    width: 24px;
+    height: 2.5px;
+    border-radius: 2px;
+    background: var(--ink);
+  }
+  .nav-burger span + span { margin-top: 6px; }
+
+  .nav-scrim {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 54; /* sous le grain (60), au-dessus de la page */
+    background: rgba(46, 27, 18, .45);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .22s ease;
+  }
+  .nav-scrim.is-open { opacity: 1; pointer-events: auto; }
+
+  .nav-drawer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 55;
+    width: min(320px, 86vw);
+    background: var(--card-bg);
+    border-left: 1px solid var(--card-border);
+    box-shadow: var(--shadow-panel);
+    transform: translateX(105%);
+    /* visibility retardée : le tiroir sort de l'écran avant de disparaître
+       de l'ordre de tabulation */
+    visibility: hidden;
+    transition: transform .25s ease, visibility 0s linear .25s;
+  }
+  .nav-drawer.is-open {
+    transform: none;
+    visibility: visible;
+    transition: transform .25s ease;
+  }
+
+  .nav-drawer-picado { height: 20px; color: var(--rojo); flex: none; }
+
+  .nav-drawer-close {
+    align-self: flex-end;
+    margin: 12px 14px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--ink);
+    padding: 10px;
+    border-radius: 9999px;
+  }
+  .nav-drawer-close:hover { background: var(--crema); }
+  .nav-drawer-close svg { display: block; }
+
+  .nav-drawer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    padding: 4px 28px 0;
+  }
+  .nav-drawer-links a {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 25px;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    padding: 9px 0;
+  }
+  .nav-drawer-links a:hover { color: var(--rojo); text-decoration: none; }
+
+  .nav-drawer-links .nav-cta {
+    margin-top: 18px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0;
+    padding: 12px 26px;
+    color: var(--ink);
+  }
+  .nav-drawer-links .nav-cta:hover { color: var(--ink); }
+
+  .nav-drawer-foot {
+    margin-top: auto;
+    padding: 16px 28px 22px;
+    border-top: 1px dashed var(--card-border);
+  }
 }
 
 @media (max-width: 760px) {
+  /* Marque légèrement resserrée : tient à côté du hamburger jusqu'à 320px */
   .nav-brand { gap: 8px; }
-  .nav-logo { height: 32px; }
-  .nav-wordmark { font-size: 16px; }
-  .lang-btn { padding: 6px 7px; font-size: 11px; }
+  .nav-logo { height: 34px; }
+  .nav-wordmark { font-size: 18px; }
 
   .hero-content { padding: 44px 24px 40px; }
   /* "Louvain‑la‑Neuve" is unbreakable (non-breaking hyphens): scale with

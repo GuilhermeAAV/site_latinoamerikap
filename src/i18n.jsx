@@ -52,6 +52,8 @@ const STRINGS = {
   'nav.puente': { fr: 'Puente cultural', es: 'Puente cultural', pt: 'Puente cultural', en: 'Puente cultural' },
   'nav.join': { fr: 'Rejoindre', es: 'Únete', pt: 'Participe', en: 'Join' },
   'nav.langAria': { fr: 'Choisir la langue', es: 'Elegir idioma', pt: 'Escolher idioma', en: 'Choose language' },
+  'nav.menuOpen': { fr: 'Ouvrir le menu', es: 'Abrir el menú', pt: 'Abrir o menu', en: 'Open menu' },
+  'nav.menuClose': { fr: 'Fermer le menu', es: 'Cerrar el menú', pt: 'Fechar o menu', en: 'Close menu' },
 
   // ---- Hero ----
   'hero.title': {
