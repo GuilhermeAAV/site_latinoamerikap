@@ -2,10 +2,13 @@
   "events": [
     {
       "title": {
-        "fr": "Carnaval Latino"
+        "fr": "Apéro latino",
+        "es": "Apéro latino",
+        "pt": "Apéro latino",
+        "en": "Apero latino"
       },
       "date": {
-        "fr": "Jeu 24 sept · 21h",
+        "fr": "Jeu 8 Oct · 20h",
         "es": "Jue 24 sept · 21h",
         "pt": "Qui 24 set · 21h",
         "en": "Thu Sep 24 · 9 pm"
