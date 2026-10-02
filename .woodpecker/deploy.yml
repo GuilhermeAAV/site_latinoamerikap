@@ -12,3 +12,4 @@ steps:
       - cp -r dist/. /data/externes/latino/
     volumes:
       - /data/externes/latino:/data/externes/latino:rw
+
