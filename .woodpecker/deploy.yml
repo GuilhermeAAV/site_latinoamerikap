@@ -1,0 +1,14 @@
+when:
+  - event: push
+    branch: main
+
+steps:
+  - name: build
+    image: node:22
+    pull: true
+    commands:
+      - npm ci
+      - npm run build
+      - cp -r dist/. /data/externes/latino/
+    volumes:
+      - /data/externes/latino:/data/externes/latino:rw
