@@ -55,6 +55,17 @@
       },
       "image": "/media/latinoamerikap.png"
     },
-    {}
+    {
+      "title": {
+        "fr": "La kapoeira"
+      },
+      "date": {
+        "fr": "14/11/2026"
+      },
+      "place": "Salle simpson",
+      "desc": {
+        "fr": "Un grand événement"
+      }
+    }
   ]
 }
