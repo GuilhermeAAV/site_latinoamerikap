@@ -54,25 +54,26 @@
       "status": "actuel",
       "years": "2026-202",
       "role": {
-        "fr": "Trésorier",
-        "es": "Tesorero",
-        "pt": "Tesoureiro",
-        "en": "Treasurer"
+        "fr": "Responsable de la musique",
+        "es": "Responsable de la música",
+        "pt": "Responsável pela música",
+        "en": "Music officer"
       },
-      "origin": "Louvain-la-Neuve",
-      "country": "belgique",
-      "lat": 50.6686,
-      "lng": 4.6118,
-      "phone": "+32 472 33 44 55",
-      "email": "thomas.peeters@latinoamerikap.be",
-      "instagram": "thomas.peeters",
-      "facebook": "thomas.peeters.lln",
+      "origin": "Santiago",
+      "country": "chili",
+      "lat": -33.44141820091089,
+      "lng": -7067938587903586,
+      "phone": "+32 476 69 28 79",
+      "email": "pablo.abarca.simm@gmail.com",
+      "instagram": "pab.abk",
+      "facebook": "Pablo Abarca",
       "description": {
-        "fr": "Trésorier. Néo-louvaniste pur jus, tombé amoureux de l’Amérique latine pendant un Erasmus à Medellín.",
-        "es": "Tesorero. Neolovaniense de pura cepa, se enamoró de América Latina durante un Erasmus en Medellín.",
-        "pt": "Tesoureiro. Louvanista da gema, apaixonou-se pela América Latina durante um Erasmus em Medellín.",
-        "en": "Treasurer. Born-and-raised Louvain local who fell in love with Latin America on an Erasmus in Medellín."
-      }
+        "fr": "Membre du KAP. Responsable de la musique lors des fêtes et des évenements. N'essayes pas de le battre au sudoku... Il est trop rapide",
+        "es": "Miembro del KAP. Responsable de la música durante las fiestas y los eventos. No intentes vencerlo en el sudoku... Es demasiado rápido.",
+        "pt": "Membro do KAP. Responsável pela música em festas e eventos. Não tente vencê-lo no Sudoku... Ele é rápido demais.",
+        "en": "Membre du KAP. Responsable de la musique lors des fêtes et des évenements. N'essayes pas de le battre au sudoku... Il est trop rapide"
+      },
+      "photo": "/media/pablo - Copie.jpeg"
     },
     {
       "name": "Valentina Suárez",
