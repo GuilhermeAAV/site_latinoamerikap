@@ -80,7 +80,7 @@
       "status": "actuel",
       "years": "2026-2027",
       "role": {
-        "fr": "Responsable affiches",
+        "fr": "Responsable des affiches",
         "es": "Responsable de carteles",
         "pt": "Responsável pela cartazes",
         "en": "Poster Manager"
@@ -89,15 +89,17 @@
       "country": "bresil",
       "lat": -18.916585258154353,
       "lng": -4827481040332379,
-      "phone": "+32 478 43 9",
-      "email": "valentina.suarez@latinoamerikap.be",
-      "instagram": "valen.suarez",
+      "phone": "+32 478 43 97 80",
+      "email": "ingridmachado1208@gmail.com",
+      "instagram": "grid1208",
+      "facebook": "Ingrid Bianchi",
       "description": {
-        "fr": "Secrétaire. PV impeccables, mémoire du kap — et meilleure adresse de ceviche entre Lima et Bruxelles.",
-        "es": "Secretaria. Actas impecables, memoria del kap — y la mejor dirección de ceviche entre Lima y Bruselas.",
-        "pt": "Secretária. Atas impecáveis, memória do kap — e o melhor endereço de ceviche entre Lima e Bruxelas.",
-        "en": "Secretary. Flawless minutes, the kap’s memory — and the best ceviche spot between Lima and Brussels."
-      }
+        "fr": "Membre du KAP. Responsable de coller et de faire les affiches. Si vous lui proposer de manger un pão de queijo (plat mineiro) vous deviendrez sûrement son·sa meilleur·e ami·e parce qu'elle ADORE ça",
+        "es": " Miembro del KAP. Responsable de pegar y hacer los carteles. Si le propones comer un pão de queijo (plato del mineiro) seguramente te convertirás en su mejor amigo·a y porque a ella LE ENCANTA",
+        "pt": "Membro do KAP. Responsável por colar e fazer cartazes. Se você sugerir que ela coma um pão de queijo (mineiro prato) você certamente se tornará seu maior amigo·a porque ela ADORA.",
+        "en": "Member of the KAP. Responsible for pasting and making posters. If you offer her to eat a pão de queijo (mineiro meal), you will surely become her best friend because she LOVES that. "
+      },
+      "photo": "/media/ingrid.jpeg"
     },
     {
       "name": "Mateo Álvarez",
