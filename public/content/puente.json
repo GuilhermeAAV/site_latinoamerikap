@@ -76,20 +76,20 @@
       "photo": "/media/pablo - Copie.jpeg"
     },
     {
-      "name": "Valentina Suárez",
+      "name": "Ingrid Machado",
       "status": "actuel",
-      "years": "2025–2026",
+      "years": "2026-2027",
       "role": {
-        "fr": "Secrétaire",
-        "es": "Secretaria",
-        "pt": "Secretária",
-        "en": "Secretary"
+        "fr": "Responsable affiches",
+        "es": "Responsable de carteles",
+        "pt": "Responsável pela cartazes",
+        "en": "Poster Manager"
       },
-      "origin": "Lima",
-      "country": "perou",
-      "lat": -12.0464,
-      "lng": -77.0428,
-      "phone": "+32 473 11 22 33",
+      "origin": "Uberlândia, Minas Gerais",
+      "country": "bresil",
+      "lat": -18.916585258154353,
+      "lng": -4827481040332379,
+      "phone": "+32 478 43 9",
       "email": "valentina.suarez@latinoamerikap.be",
       "instagram": "valen.suarez",
       "description": {
