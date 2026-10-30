@@ -100,6 +100,30 @@
         "en": "Member of the KAP. Responsible for pasting and making posters. If you offer her to eat a pão de queijo (mineiro meal), you will surely become her best friend because she LOVES that. "
       },
       "photo": "/media/ingrid.jpeg"
+    },
+    {
+      "name": "Nerea López Martín",
+      "status": "actuel",
+      "years": "2026-2027",
+      "role": {
+        "fr": "Membre de la team building",
+        "es": "Miembro de la team building ",
+        "pt": "Membro da team building",
+        "en": "member of the teamp building"
+      },
+      "origin": "Madrid",
+      "lat": 40.41448910293483,
+      "lng": -36.9333106967942,
+      "phone": "+ 352 661 468 994",
+      "email": "nerez2009nerez@gmail.com",
+      "instagram": "nerea_lopez_26",
+      "facebook": "Nerea López Martín",
+      "description": {
+        "fr": "Membre du KAP. Elle est dans la team building pour être sûre que chaque latino soit bien au sein du groupe",
+        "es": "Miemrbo del KAP. Es parte de la team building para estar segura que cada latino sea bine en el grupo. ",
+        "pt": "Membro do KAP. Ela está na team building para garantir que todos os latinos realmente façam parte do grupo.",
+        "en": "Member of the KAP. She is in team building to be sure that every Latino feels good in the group."
+      }
     }
   ]
 }
