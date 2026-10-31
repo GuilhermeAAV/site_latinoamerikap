@@ -35,19 +35,20 @@
         "pt": "vicepresidente",
         "en": "vice-president"
       },
-      "origin": "Mexico",
+      "origin": "Monterrey",
       "country": "mexique",
-      "lat": 19.4326,
-      "lng": -99.1332,
+      "lat": 25.68028279960109,
+      "lng": -100.33665017809354,
       "phone": "+32 497 06 36 59",
-      "email": "diego.fernandez@latinoamerikap.be",
+      "email": "sendentom94@gmail.com",
       "instagram": "tom_senden",
       "description": {
-        "fr": "Co-président. Il gère la vue d’ensemble — et défend l’idée que les tacos ne se mangent jamais avec une fourchette.",
-        "es": "Copresidente. Lleva la visión de conjunto — y defiende que los tacos nunca se comen con tenedor.",
-        "pt": "Copresidente. Cuida da visão geral — e defende que taco nunca se come com garfo.",
-        "en": "Co-president. Keeps the big picture — and insists tacos are never eaten with a fork."
-      }
+        "fr": "Menbre du KAP. Il est le bras doit du président. Il a appris l'espagnol grâce à une année d'échage au Mexique en 2023-2024 et à un mois d'échange fait au Chili l'année d'avant (2022)",
+        "es": "Miembro del KAP. Es el brazo derecho del presidente. Aprendió el español gracias a un año de intercambio en México en 2023-2024 y a un mes de intercambio hecho en Chile en año anterior (2022)",
+        "pt": "Menbre da KAP. Ele é o braço do presidente. Ele aprendeu espanhol graças a um intercâmbio de um ano no México em 2023-2024 e a um intercâmbio de um mês no Chile no ano anterior (2022)",
+        "en": "Menbre from KAP. He is the president’s arm. He learned Spanish thanks to a year-long exchange in Mexico in 2023-2024 and a month-long exchange in Chile the year before (2022)"
+      },
+      "photo": "/media/Tom.png"
     },
     {
       "name": "Pablo Abarca Simmross",
