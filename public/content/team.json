@@ -77,8 +77,9 @@
       "carta": "Surnom à venir",
       "role": {
         "fr": "Affiches",
-        "pt": "Resp. eventos",
-        "en": "Events lead"
+        "es": "Carteles ",
+        "pt": "Cartazes",
+        "en": "Posters"
       },
       "origin": "Buenos Aires",
       "country": "argentine"
