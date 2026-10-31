@@ -90,13 +90,14 @@
       "year": "2026-2027",
       "carta": "Surnom à venir",
       "role": {
-        "fr": "Resp. cuisine",
-        "es": "Resp. cocina",
-        "pt": "Resp. cozinha",
-        "en": "Kitchen lead"
+        "fr": "Tino culturel",
+        "es": "Tino culturel",
+        "pt": "Tino culturel",
+        "en": "Tino culturel"
       },
-      "origin": "São Paulo",
-      "country": "bresil"
+      "origin": "Namur",
+      "country": "belgique",
+      "photo": "/media/42fd5f88-f43b-4c92-93a7-ef2b59b48cc6.jpeg"
     },
     {
       "name": "Nicolás Vargas",
