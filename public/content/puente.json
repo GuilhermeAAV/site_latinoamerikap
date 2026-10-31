@@ -176,6 +176,30 @@
         "pt": "Membro do KAP. É ele quem cuida do dinheiro dos latinos. Mas tenha cuidado, você nunca estará a salvo de uma batalha de aura com ele!",
         "en": "Member of the KAP. He’s the one who handles the Latino’s money. But be careful, you’re never safe from an aura battle with him!"
       }
+    },
+    {
+      "name": "Carla Trolese Fabregat",
+      "status": "actuel",
+      "years": "2026-2027",
+      "role": {
+        "fr": "Responsable team building et insta",
+        "es": "Respnsable de la team building y del instagram ",
+        "pt": "responsável pela team building e pelo Instagram",
+        "en": "responsible for team building and Instagram"
+      },
+      "origin": "Mallorca",
+      "lat": 39.69065328336313,
+      "lng": 2.991365381305,
+      "phone": "+32 472 21 61 21",
+      "email": "carlatrolesse@gmail.com",
+      "instagram": "carlafabregatt",
+      "facebook": "Carla Trolese Fabregat",
+      "description": {
+        "fr": "Membre du KAP. Elle est responsable de la team building et du compte insta. N'héstez d'ailleurs pas à lui envoyer des petits messages d'amour ;)",
+        "es": "Miembro del KAP. Es responsable de la team building y de la cuenta Insta. Por cierto, no duden en enviarle pequeños mensajes de amor ;)",
+        "pt": "Membro do KAP. Ela é responsável pela team building e pela conta Insta. Não hesite em enviar-lhe pequenas mensagens de amor ;)",
+        "en": "Member of the KAP. She is responsible for team building and the Insta account. Don’t hesitate to send her little love messages ;)"
+      }
     }
   ]
 }
