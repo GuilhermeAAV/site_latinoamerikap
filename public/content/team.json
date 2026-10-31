@@ -187,13 +187,14 @@
       "year": "2026-2027",
       "carta": "Surnom à venir",
       "role": {
-        "fr": "Trésorier",
-        "es": "Tesorero",
-        "pt": "Tesoureiro",
-        "en": "Treasurer"
+        "fr": "Tino culturel",
+        "es": "Tino culturel",
+        "pt": "Tino culturel",
+        "en": "Tino culturel"
       },
-      "origin": "Bruxelles",
-      "country": "belgique"
+      "origin": "Bolivia",
+      "country": "bolivie",
+      "photo": "/media/5121cb7d-080f-4511-8803-fe205a007ba4-1.jpeg"
     },
     {
       "name": "Renata Oliveira",
