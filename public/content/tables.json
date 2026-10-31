@@ -24,13 +24,16 @@
     {
       "badge": "PT",
       "title": {
-        "fr": "Roda de conversa"
+        "fr": "À l’ILV (institut des langues vivantes), un moment tous ensemble ou on parle Portugais autour d’un thème différent toutes les semaines accompagné d’un jeu.",
+        "es": "En el ILV (Instituto de Lenguas Modernas), un momento para estar todos juntos en el que se habla portugués sobre un tema diferente cada semana, acompañado de un juego.",
+        "pt": "No ILV (Instituto de Línguas Modernas), um momento em que nos reunimos para conversar em português sobre um tema diferente a cada semana, acompanhado de um jogo.",
+        "en": "At the ILV (Institute of Modern Languages), we get together to speak Portuguese about a different topic each week, accompanied by a game."
       },
       "schedule": {
-        "fr": "Tous les mercredis · 19h30",
-        "es": "Todos los miércoles · 19.30",
-        "pt": "Toda quarta · 19h30",
-        "en": "Wednesdays · 7:30 pm"
+        "fr": "Tous les lundis · 18h30",
+        "es": "Todos los lunes · 18:30",
+        "pt": "Toda a segunda · 18:30",
+        "en": "Mondays · 6:30 pm"
       },
       "desc": {
         "fr": "Portugais du Brésil et du Portugal, musique et cafezinho compris. Sem estresse.",
