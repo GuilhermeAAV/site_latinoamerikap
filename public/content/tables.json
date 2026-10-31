@@ -2,23 +2,29 @@
   "tables": [
     {
       "badge": "ES",
-      "title": { "fr": "Mesa de conversación" },
+      "title": {
+        "fr": "Tables de conversation",
+        "es": "Mesas de conversación",
+        "pt": "Mesas de conversa",
+        "en": "Conversation tables"
+      },
       "schedule": {
-        "fr": "Tous les lundis · 19h30",
-        "es": "Todos los lunes · 19.30",
-        "pt": "Toda segunda · 19h30",
-        "en": "Mondays · 7:30 pm"
+        "fr": "Tous les lundis · 18h30",
+        "es": "Todos los lunes · 18:30",
+        "pt": "Toda segunda · 18:30",
+        "en": "Mondays · 6:30 pm"
       },
       "desc": {
-        "fr": "Au kot, autour d’un maté ou d’une agua de jamaica. Thème différent chaque semaine.",
-        "es": "En el kot, alrededor de un mate o de un agua de jamaica. Tema diferente cada semana.",
-        "pt": "No kot, em volta de um mate ou de uma água de jamaica. Tema diferente a cada semana.",
-        "en": "At the kot, over a mate or an agua de jamaica. A different theme every week."
+        "fr": "À l’ILV (institut des langues vivantes), un moment tous ensemble ou on parle Espagnol ou Portugais autour d’un thème toutes les semaines accompagnés de jeux.",
+        "es": "En el ILV (instituto de las lenguas vivas), un momento juntos en el que hablamos Español o Portugues sobre un tema todas las semanas accompañado de un juego ",
+        "en": "At the ILV (institute of modern languages) "
       }
     },
     {
       "badge": "PT",
-      "title": { "fr": "Roda de conversa" },
+      "title": {
+        "fr": "Roda de conversa"
+      },
       "schedule": {
         "fr": "Tous les mercredis · 19h30",
         "es": "Todos los miércoles · 19.30",
