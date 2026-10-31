@@ -152,6 +152,30 @@
         "en": "Member of the KAP. She is responsible for organizing Monday night tables. Our friend Juliette learned Spanish thanks to an Erasmus program in ... This little sunshine has already traveled 4 times in North America (but not yet from the South, the traitor)"
       },
       "photo": "/media/Juliette.png"
+    },
+    {
+      "name": "Joan Massart",
+      "status": "actuel",
+      "years": "2026-2027",
+      "role": {
+        "fr": "Trésorier",
+        "es": "Tesorero",
+        "pt": "tesoureiro",
+        "en": "treasurer"
+      },
+      "origin": "Barcelone",
+      "lat": 41.39180172811443,
+      "lng": 2.1394726572754115,
+      "phone": "+32 498 43 36 32",
+      "email": "joan.massart@gmail.com",
+      "instagram": "joan_massart",
+      "facebook": "joan massart",
+      "description": {
+        "fr": "Membre du KAP. C'est lui qui s'occupe de gérer l'argent du latino. Mais attention, vous n'êtes jamais à l'abris d'une battle d'aura avec lui!",
+        "es": "Miembro del KAP. Es el que se encarga de gestionar la plata del latino. Pero ten cuidado, nunca estan a salvo de una batalla de aura con el!",
+        "pt": "Membro do KAP. É ele quem cuida do dinheiro dos latinos. Mas tenha cuidado, você nunca estará a salvo de uma batalha de aura com ele!",
+        "en": "Member of the KAP. He’s the one who handles the Latino’s money. But be careful, you’re never safe from an aura battle with him!"
+      }
     }
   ]
 }
