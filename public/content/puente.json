@@ -124,7 +124,34 @@
         "es": "Miemrbo del KAP. Es parte de la team building para estar segura que cada latino sea bine en el grupo. ",
         "pt": "Membro do KAP. Ela está na team building para garantir que todos os latinos realmente façam parte do grupo.",
         "en": "Member of the KAP. She is in team building to be sure that every Latino feels good in the group."
-      }
+      },
+      "photo": "/media/Nerea.jpeg"
+    },
+    {
+      "name": "Juliette Sterpin",
+      "status": "actuel",
+      "years": "2026-2027",
+      "role": {
+        "fr": "Responsable des tables de conversation du lundi",
+        "es": "Responsable de las mesas del lunes",
+        "pt": "Responsável das mesas de segunda-feira",
+        "en": "Person in charge of Monday’s conversation tables"
+      },
+      "origin": "Huy",
+      "country": "belgique",
+      "lat": 50.517169529366925,
+      "lng": 5.240076859356801,
+      "phone": "+ 32 472 76 06 95",
+      "email": "justerpin@hotmail.com",
+      "instagram": "juliettesterpin",
+      "facebook": "Juliette Sterpin",
+      "description": {
+        "fr": "Membre du KAP. Elle est responsable de l'organisation des tables du lundi soir. Notre amie Juliette a appris l'Espagnol grâce à un Erasmus en ... Ce rayon de soleil à déjà voyagé 4 fois en Amérique du Nord (mais pas encore du Sud, la traitre)",
+        "es": "Miembro del KAP. Es responsable de la organización de las mesas del lunes por la noche. Nuestra amiga Juliette aprendió español gracias a un Erasmus en ... Este rayo de sol ya viajó 4 veces a América del Norte (pero todavía no al sur, la traidora)",
+        "pt": "Membro do KAP. Ela é responsável por organizar as mesas de segunda à noite. Nossa amiga Juliette aprendeu espanhol graças a um programa Erasmus em... Este raio de sol já viajou 4 vezes na América do Norte (mas ainda não do Sul, o traidor)",
+        "en": "Member of the KAP. She is responsible for organizing Monday night tables. Our friend Juliette learned Spanish thanks to an Erasmus program in ... This little sunshine has already traveled 4 times in North America (but not yet from the South, the traitor)"
+      },
+      "photo": "/media/Juliette.png"
     }
   ]
 }
