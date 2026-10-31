@@ -43,17 +43,18 @@
       "country": "belgique"
     },
     {
-      "name": "Valentina Suárez",
-      "year": "2025–2026",
-      "carta": "LA SECRETARIA",
+      "name": "Pablo Abarca",
+      "year": "2026-2027",
+      "carta": "Surnom à venir",
       "role": {
-        "fr": "Secrétaire",
-        "es": "Secretaria",
-        "pt": "Secretária",
-        "en": "Secretary"
+        "fr": "Musique",
+        "es": "Musica",
+        "pt": "Musica",
+        "en": "Music"
       },
-      "origin": "Lima",
-      "country": "perou"
+      "origin": "Santiago",
+      "country": "chili",
+      "photo": "/media/cdd93089-ed7a-4910-99de-680e17671e2e.jpeg"
     },
     {
       "name": "Mateo Álvarez",
