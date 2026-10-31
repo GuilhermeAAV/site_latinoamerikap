@@ -37,34 +37,39 @@
       "place": "Salle P1 Blocry",
       "desc": {
         "fr": "C’est une initiation à la Capoeira ainsi qu’à deux danses traditionnelles du Brésil le Forró et Coco de roda. Donné par un professionnel, le cours englobe tous les aspects de la capoeira : les mouvements, la musique, les chants, les combats et évidemment l’histoire du mouvement qui est très il",
-        "es": "Cocinamos juntos arepas, empanadas y guacamole — y luego nos lo comemos todo, claro.",
-        "pt": "Cozinhamos juntos arepas, empanadas e guacamole — e depois comemos tudo, claro.",
-        "en": "We cook arepas, empanadas and guacamole together — then eat it all, claro."
+        "es": "Se trata de una introducción a la capoeira, así como a dos bailes tradicionales de Brasil: el forró y el coco de roda. Dada por un profesional, la clase abarca todos los aspectos de la capoeira: los movimientos, la música, los cantos, los combates y, por supuesto, la historia de este movimiento, que es muy importante para Brasil.",
+        "pt": "Trata-se de uma introdução à capoeira, bem como a duas danças tradicionais do Brasil: o forró e o coco de roda. Ministrada por um profissional, a aula abrange todos os aspectos da capoeira: os movimentos, a música, os cantos, as lutas e, obviamente, a história do movimento, que é muito importante para o Brasil.",
+        "en": "This is an introduction to capoeira, as well as to two traditional Brazilian dances: forró and coco de roda. Taught by a professional, the class covers all aspects of capoeira: the movements, the music, the chants, the sparring, and, of course, the history of the art, which is very important to Brazil."
       }
     },
     {
       "title": {
-        "fr": "Apéro Latino"
+        "fr": "Dia de los Muertos",
+        "es": "Dia de los muertos",
+        "pt": "Dia de los muertos ",
+        "en": "Dia de los muertos"
       },
       "date": {
-        "fr": "10/10/2026"
+        "fr": "Jeu S9 12 oct • ",
+        "es": "Jue S9 12 oct •",
+        "pt": "Qui S9 12 otu •",
+        "en": "Thu W9 oct 12 •"
       },
-      "place": "Salle simpson",
-      "desc": {
-        "fr": "Une fête de malade"
-      },
+      "place": "Salle Joanne Simpson",
       "image": "/media/latinoamerikap.png"
     },
     {
       "title": {
-        "fr": "La kapoeira"
+        "fr": "Conférence ",
+        "es": "Conferencia ",
+        "en": "Conference "
       },
       "date": {
-        "fr": "14/11/2026"
+        "fr": "À venir"
       },
-      "place": "Salle simpson",
+      "place": "A venir",
       "desc": {
-        "fr": "Un grand événement"
+        "fr": "A venir"
       }
     }
   ]
