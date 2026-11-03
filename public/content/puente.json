@@ -137,10 +137,9 @@
         "pt": "Responsável das mesas de segunda-feira",
         "en": "Person in charge of Monday’s conversation tables"
       },
-      "origin": "Huy",
-      "country": "belgique",
-      "lat": 50.517169529366925,
-      "lng": 5.240076859356801,
+      "origin": "Salamanque",
+      "lat": 40.971704864197896,
+      "lng": -5.661665838963624,
       "phone": "+ 32 472 76 06 95",
       "email": "justerpin@hotmail.com",
       "instagram": "juliettesterpin",
@@ -202,6 +201,7 @@
         "en": "Member of the KAP. She is responsible for team building and the Insta account. Don’t hesitate to send her little love messages ;)"
       },
       "photo": "/media/Carla.jpeg"
-    }
+    },
+    {}
   ]
 }
