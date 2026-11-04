@@ -202,6 +202,30 @@
       },
       "photo": "/media/Carla.jpeg"
     },
-    {}
+    {
+      "name": "Guilherme Alivm Avila",
+      "status": "actuel",
+      "years": "2026-2027",
+      "role": {
+        "fr": "Responsable du site web",
+        "es": "Responsable de la página web",
+        "pt": "Responsável da página web",
+        "en": "Responsible of website"
+      },
+      "origin": "Goiania",
+      "country": "bresil",
+      "lat": -16.691900790619318,
+      "lng": -49.25415681455178,
+      "phone": "+ 32 473 12 88 86",
+      "email": "alvimavilaguilherme@gmail.com",
+      "instagram": "gui_avl",
+      "facebook": "Guilherme Alvim Avila",
+      "description": {
+        "fr": "Membre du KAP. Grâce à lui, le site web est plus stylé que jamais",
+        "es": "Miembro del KAP. Gracias a el, la página web es más cool que nunca",
+        "pt": "Membro do KAP. Graças a ele o site está mais legal do que nunca",
+        "en": "Member of the KAP. Thanks to him, the website is more stylish than ever"
+      }
+    }
   ]
 }
