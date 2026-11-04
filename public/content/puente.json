@@ -226,6 +226,29 @@
         "pt": "Membro do KAP. Graças a ele o site está mais legal do que nunca",
         "en": "Member of the KAP. Thanks to him, the website is more stylish than ever"
       }
+    },
+    {
+      "name": "Juliette Pinnerot",
+      "status": "alumni",
+      "role": {
+        "fr": "Ancienne Membre",
+        "es": "Ex-Miembro",
+        "pt": "Ex-membro",
+        "en": "Former member"
+      },
+      "origin": "Monterrey",
+      "country": "mexique",
+      "lat": 25.69419578608768,
+      "lng": -100.3452486248713,
+      "phone": "+33 760 99 52 35",
+      "instagram": "_.juli.ett.e._",
+      "description": {
+        "fr": "Juliette a fait un échange Rotary au Mexique en 2023-2024",
+        "es": "Juliette hizo un intercambio con el Rotary en México en 2023-2024",
+        "pt": "Juliette fez intercâmbio no Rotary no México em 2023-2024",
+        "en": "Juliette did a Rotary exchange in Mexico in 2023-2024"
+      },
+      "photo": "/media/Juliette ancienne.png"
     }
   ]
 }
