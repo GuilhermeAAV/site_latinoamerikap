@@ -295,6 +295,55 @@
         "en": "A former member of KAP, he will always be up for dancing with you. Especially if it’s about Brazilian funk"
       },
       "photo": "/media/gab.png"
+    },
+    {
+      "name": "Lili Hardy",
+      "status": "alumni",
+      "role": {
+        "fr": "Ancienne membre",
+        "es": "Ex-miembro",
+        "pt": "Ex-membro",
+        "en": "Former member"
+      },
+      "origin": "San carlos de Bolivar",
+      "country": "argentine",
+      "lat": -36.23654238521399,
+      "lng": -61.121600550886654,
+      "phone": "+32 494 05 35 95",
+      "email": "lilihardy37@gmail.com",
+      "instagram": "lilihaardy",
+      "description": {
+        "fr": "Ancienne membre du KAP, elle à fait un échange a San Carlos de Bolívar en Argentine en 2023-2024",
+        "es": "Ex-miembro del KAP. Hizo un intercambio en San Carlos de Bolívar en Argentina en 2023-2024",
+        "pt": "Ex-membro do KAP. Fez intercâmbio em San Carlos de Bolívar, Argentina, em 2023-2024.",
+        "en": "Former member of the KAP. She made an exchange in San Carlos de Bolívar, Argentina in 2023-2024."
+      },
+      "photo": "/media/Lili.png"
+    },
+    {
+      "name": "Martina Villa Fernandez",
+      "status": "alumni",
+      "years": "2023-2025",
+      "role": {
+        "fr": "Ancienne membre ",
+        "es": "Ex-miembro",
+        "pt": "E-membro",
+        "en": "Former member"
+      },
+      "origin": "Santa Cruz de la Sierra",
+      "country": "bolivie",
+      "lat": -17.80362028588229,
+      "lng": -63.13577614717323,
+      "phone": "+32 491 19 02 48",
+      "email": "martina.villa.fernandez@gmail.com",
+      "instagram": "martivillafdz",
+      "description": {
+        "fr": "Ancienne membre du KAP, on vous met au défis de réussir à parler plus de langue qu'elle... Spoiler : très compliqué",
+        "es": "Ex-miembro del KAP. Les presentamos el desafío de tratar de hablar más idioma que ella... Spoiler: muy complicado ",
+        "pt": "Ex-membro do KAP. Estamos desafiando você a falar mais idiomas do que ela... Spoiler: muito complicado",
+        "en": "A former member of the KAP, we’re challenging you to manage to speak more languages than she does... Spoiler: very complicated"
+      },
+      "photo": "/media/Martina.png"
     }
   ]
 }
