@@ -366,6 +366,30 @@
         "pt": "Ex-membro do KAP",
         "en": "Former member of the KAP"
       }
+    },
+    {
+      "name": "Eis Raphay",
+      "status": "alumni",
+      "years": "2025-2026",
+      "role": {
+        "fr": "Ancienne membre",
+        "es": "Ex miembro",
+        "pt": "Ex membro",
+        "en": "Former member"
+      },
+      "origin": "Rivera",
+      "country": "argentine",
+      "lat": -37.16076857609897,
+      "lng": -63.239597014577924,
+      "phone": "+32 494 45 6 68",
+      "email": "eisraphay@gmail.com",
+      "description": {
+        "fr": "Ancienne membre du KAP.",
+        "es": "Ex miembro del KAP",
+        "pt": "Ex-membro do KAP",
+        "en": "Former member of the KAP"
+      },
+      "photo": "/media/Eis.png"
     }
   ]
 }
