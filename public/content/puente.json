@@ -3,7 +3,7 @@
     {
       "name": "Eglantine Gomez",
       "status": "actuel",
-      "years": "2026-2027",
+      "years": "2026-",
       "role": {
         "fr": "Membre",
         "es": "Miembra",
@@ -28,7 +28,7 @@
     {
       "name": "Tom Senden",
       "status": "actuel",
-      "years": "2026-2027",
+      "years": "2025-",
       "role": {
         "fr": "vice-président",
         "es": "vicepresidente",
@@ -53,7 +53,7 @@
     {
       "name": "Pablo Abarca Simmross",
       "status": "actuel",
-      "years": "2026-202",
+      "years": "2025-",
       "role": {
         "fr": "Membre",
         "es": "Miembro",
@@ -79,7 +79,7 @@
     {
       "name": "Ingrid Machado",
       "status": "actuel",
-      "years": "2026-2027",
+      "years": "2026-",
       "role": {
         "fr": "Membre",
         "es": "Miembro",
@@ -105,7 +105,7 @@
     {
       "name": "Nerea López Martín",
       "status": "actuel",
-      "years": "2026-2027",
+      "years": "2026-",
       "role": {
         "fr": "Membre",
         "es": "Miembro",
@@ -130,7 +130,7 @@
     {
       "name": "Juliette Sterpin",
       "status": "actuel",
-      "years": "2026-2027",
+      "years": "2026-",
       "role": {
         "fr": "Membre",
         "es": "Miembro",
@@ -155,7 +155,7 @@
     {
       "name": "Joan Massart",
       "status": "actuel",
-      "years": "2026-2027",
+      "years": "2025-2027",
       "role": {
         "fr": "Trésorier",
         "es": "Tesorero",
@@ -180,7 +180,7 @@
     {
       "name": "Carla Trolese Fabregat",
       "status": "actuel",
-      "years": "2026-2027",
+      "years": "2025-",
       "role": {
         "fr": "Membre",
         "es": "Miembro",
@@ -394,7 +394,7 @@
     {
       "name": "Matias Ballivuan",
       "status": "actuel",
-      "years": "2026-2025",
+      "years": "2026-",
       "role": {
         "fr": "Membre",
         "es": "Miembro",
@@ -414,6 +414,30 @@
         "pt": "Membro do Kap. Ele é responsável pela \"Tino Culturel\"",
         "en": "Member of the KAP. He's responsible for the \"Tino Culturel\""
       }
+    },
+    {
+      "name": "Naomi Roch",
+      "status": "actuel",
+      "years": "2025-",
+      "role": {
+        "fr": "Membre",
+        "es": "Miembro",
+        "pt": "Membro",
+        "en": "Member"
+      },
+      "origin": "Quito",
+      "lat": -0.22230961790359086,
+      "lng": -78.51721864726329,
+      "phone": "+32 493 38 84 18",
+      "email": "naomirochmerlyn@gmail.com",
+      "instagram": "rochnaomi",
+      "description": {
+        "fr": "Membre du KAP. Elle fait partie de la team building. N'hésitez jamais à lui demander un câlin, elle vous le donnera avec plaisir",
+        "es": "Miembro del KAP. Es parte de la team building. Nunca duden en pedirle un abrazo, lo dará con mucho gusto",
+        "pt": "Membro do KAP. Ela faz parte da team building. Nunca hesite em pedir-lhe um abraço, ela terá prazer em dá-lo a você ",
+        "en": "Member of the KAP. She's part of the team building. Never hesitate to ask her for a hug, she'll give it you with pleasur"
+      },
+      "photo": "/media/Nam.png"
     }
   ]
 }
