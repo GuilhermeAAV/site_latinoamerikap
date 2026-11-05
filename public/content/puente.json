@@ -344,6 +344,28 @@
         "en": "A former member of the KAP, we’re challenging you to manage to speak more languages than she does... Spoiler: very complicated"
       },
       "photo": "/media/Martina.png"
+    },
+    {
+      "name": "Augusto Silva",
+      "status": "alumni",
+      "role": {
+        "fr": "Ancien Membre",
+        "es": "Ex miembro",
+        "pt": "Ex-membro",
+        "en": "Former member"
+      },
+      "origin": "São Paulo",
+      "country": "bresil",
+      "lat": -23.55895564864727,
+      "lng": -46.63647554886038,
+      "phone": "+55 199 996 604 02",
+      "email": "augubvs@gmail.com",
+      "description": {
+        "fr": "Ancien membre du KAP",
+        "es": "Ex miembro del KAP",
+        "pt": "Ex-membro do KAP",
+        "en": "Former member of the KAP"
+      }
     }
   ]
 }
