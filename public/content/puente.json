@@ -5,7 +5,7 @@
       "status": "actuel",
       "years": "2026-2027",
       "role": {
-        "fr": "membre ",
+        "fr": "Membre",
         "es": "Miembra",
         "pt": "membro",
         "en": "member"
@@ -55,10 +55,10 @@
       "status": "actuel",
       "years": "2026-202",
       "role": {
-        "fr": "Responsable de la musique",
-        "es": "Responsable de la música",
-        "pt": "Responsável pela música",
-        "en": "Music officer"
+        "fr": "Membre",
+        "es": "Miembro",
+        "pt": "Membro",
+        "en": "Member"
       },
       "origin": "Santiago",
       "country": "chili",
@@ -81,10 +81,10 @@
       "status": "actuel",
       "years": "2026-2027",
       "role": {
-        "fr": "Responsable des affiches",
-        "es": "Responsable de carteles",
-        "pt": "Responsável pela cartazes",
-        "en": "Poster Manager"
+        "fr": "Membre",
+        "es": "Miembro",
+        "pt": "Membro",
+        "en": "Member"
       },
       "origin": "Uberlândia, Minas Gerais",
       "country": "bresil",
@@ -107,10 +107,10 @@
       "status": "actuel",
       "years": "2026-2027",
       "role": {
-        "fr": "Membre de la team building",
-        "es": "Miembro de la team building ",
-        "pt": "Membro da team building",
-        "en": "member of the teamp building"
+        "fr": "Membre",
+        "es": "Miembro",
+        "pt": "Membro",
+        "en": "Member"
       },
       "origin": "Madrid",
       "lat": 40.42285329166505,
@@ -132,10 +132,10 @@
       "status": "actuel",
       "years": "2026-2027",
       "role": {
-        "fr": "Responsable des tables de conversation du lundi",
-        "es": "Responsable de las mesas del lunes",
-        "pt": "Responsável das mesas de segunda-feira",
-        "en": "Person in charge of Monday’s conversation tables"
+        "fr": "Membre",
+        "es": "Miembro",
+        "pt": "Membro",
+        "en": "Member"
       },
       "origin": "Salamanque",
       "lat": 40.971704864197896,
@@ -182,10 +182,10 @@
       "status": "actuel",
       "years": "2026-2027",
       "role": {
-        "fr": "Responsable team building et insta",
-        "es": "Respnsable de la team building y del instagram ",
-        "pt": "responsável pela team building e pelo Instagram",
-        "en": "responsible for team building and Instagram"
+        "fr": "Membre",
+        "es": "Miembro",
+        "pt": "Membro",
+        "en": "Member"
       },
       "origin": "Mallorca",
       "lat": 39.69065328336313,
@@ -207,10 +207,10 @@
       "status": "actuel",
       "years": "2026-2027",
       "role": {
-        "fr": "Responsable du site web",
-        "es": "Responsable de la página web",
-        "pt": "Responsável da página web",
-        "en": "Responsible of website"
+        "fr": "Membre",
+        "es": "Miembro",
+        "pt": "Membro",
+        "en": "Member"
       },
       "origin": "Goiania",
       "country": "bresil",
@@ -390,6 +390,30 @@
         "en": "Former member of the KAP"
       },
       "photo": "/media/Eis.png"
+    },
+    {
+      "name": "Matias Ballivuan",
+      "status": "actuel",
+      "years": "2026-2025",
+      "role": {
+        "fr": "Membre",
+        "es": "Miembro",
+        "pt": "Membro",
+        "en": "Member"
+      },
+      "origin": "La Paz",
+      "country": "bolivie",
+      "lat": -16.486219894563806,
+      "lng": -68.13382655944412,
+      "phone": "+32 496 13 90 65",
+      "email": "ballivianmatias@gmail.com",
+      "instagram": "ballivianmatias",
+      "description": {
+        "fr": "Membre du KAP. Il est responsable du \"Tino culturel\" ",
+        "es": "Miembro del KAP. Es responsable del \"Tino Culturel\"",
+        "pt": "Membro do Kap. Ele é responsável pela \"Tino Culturel\"",
+        "en": "Member of the KAP. He's responsible for the \"Tino Culturel\""
+      }
     }
   ]
 }
