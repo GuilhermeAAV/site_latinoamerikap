@@ -4,7 +4,7 @@
     {
       "name": "Roberto Santomato",
       "year": "2026-2027",
-      "carta": "Surnom à venir",
+      "carta": "Drama King",
       "role": {
         "fr": "Président ",
         "es": "Presidente",
@@ -18,7 +18,7 @@
     {
       "name": "Tom Senden",
       "year": "2026-2027",
-      "carta": "Surnom à venir ",
+      "carta": "Hemi éthylique ",
       "role": {
         "fr": "Vice président ",
         "es": "Vicepresidente ",
@@ -32,7 +32,7 @@
     {
       "name": "Joan Massart",
       "year": "2026-2027",
-      "carta": "Surnom à venir",
+      "carta": "BE 6767676767",
       "role": {
         "fr": "Trésorier",
         "es": "Tesorero",
@@ -46,7 +46,7 @@
     {
       "name": "Pablo Abarca",
       "year": "2026-2027",
-      "carta": "Surnom à venir",
+      "carta": "Pedro Picapiedras",
       "role": {
         "fr": "Musique",
         "es": "Musica",
@@ -55,12 +55,12 @@
       },
       "origin": "Santiago",
       "country": "chili",
-      "photo": "/media/IMG_2515.jpeg"
+      "photo": "/media/692a8718-b597-44ae-875d-fbe72f89aa9b.jpeg"
     },
     {
       "name": "Carla Trolese",
       "year": "2026-2027",
-      "carta": "Surnom à venir",
+      "carta": "iCarly ",
       "role": {
         "fr": "Team building",
         "es": "Team building",
@@ -74,7 +74,7 @@
     {
       "name": "Ingrid Bianchi",
       "year": "2026-2027",
-      "carta": "Surnom à venir",
+      "carta": "Cardi P",
       "role": {
         "fr": "Affiches",
         "es": "Carteles ",
@@ -88,7 +88,7 @@
     {
       "name": "Eglantine Gomez",
       "year": "2026-2027",
-      "carta": "Surnom à venir",
+      "carta": "Bebecita",
       "role": {
         "fr": "Tino culturel",
         "es": "Tino culturel",
@@ -102,7 +102,7 @@
     {
       "name": "Joana Rechena",
       "year": "2026-2027",
-      "carta": "Surnom à venir",
+      "carta": "Muchas gracias aficion",
       "role": {
         "fr": "Pinochet",
         "es": "Pinochet",
@@ -116,7 +116,7 @@
     {
       "name": "Guilherme Avila",
       "year": "2026-2027",
-      "carta": "Surnom à venir",
+      "carta": "Carnotaurus",
       "role": {
         "fr": "Musique",
         "es": "Musica",
@@ -129,7 +129,7 @@
     {
       "name": "Naomi Roch",
       "year": "2026-2027",
-      "carta": "Surnom à venir",
+      "carta": "Namaste ",
       "role": {
         "fr": "Team building",
         "es": "Team building",
@@ -143,7 +143,7 @@
     {
       "name": "Juliette Sterpin",
       "year": "2026-2027",
-      "carta": "Surnom à venir",
+      "carta": "La ticher ",
       "role": {
         "fr": "Tables de conversation",
         "es": "Mesas de conversacion",
@@ -157,7 +157,7 @@
     {
       "name": "Nerea Lopez",
       "year": "2026-2027",
-      "carta": "Surnom à venir",
+      "carta": "FAM",
       "role": {
         "fr": "Team building",
         "es": "Team building",
@@ -171,7 +171,7 @@
     {
       "name": "Nicolas Lecoutere ",
       "year": "2026-2027",
-      "carta": "Surnom à venir",
+      "carta": "Dyson",
       "role": {
         "fr": "Facebook",
         "es": "Facebook",
@@ -185,7 +185,7 @@
     {
       "name": "Matias Ballivian",
       "year": "2026-2027",
-      "carta": "Surnom à venir",
+      "carta": "Sans barbe 93",
       "role": {
         "fr": "Tino culturel",
         "es": "Tino culturel",
@@ -237,6 +237,20 @@
       "origin": "Bolivia",
       "country": "bolivie",
       "photo": "/media/7a8600e6-b826-42c5-8216-c0b67d3985a7.jpeg"
+    },
+    {
+      "name": "Beatriz Teixeira ",
+      "year": "2026-2027",
+      "carta": "Surnom à venir",
+      "role": {
+        "fr": "Team building",
+        "es": "Team building",
+        "pt": "Team building",
+        "en": "Team building"
+      },
+      "origin": "Portugal",
+      "country": "bresil",
+      "photo": "/media/a5dc6a10-bd0e-4e54-86b2-da44145b3113.jpeg"
     }
   ]
 }
