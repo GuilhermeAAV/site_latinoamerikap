@@ -209,6 +209,34 @@
       "origin": "Argentine",
       "country": "belgique",
       "photo": "/media/5227a820-b02a-4a1b-8a7b-78c99686a288.jpeg"
+    },
+    {
+      "name": "Aurore Defalque",
+      "year": "2026-2027",
+      "carta": "Surnom à venir",
+      "role": {
+        "fr": "Instagram ",
+        "es": "Instagram ",
+        "pt": "Instagram ",
+        "en": "Instagram "
+      },
+      "origin": "Belgique",
+      "country": "belgique",
+      "photo": "/media/0f002608-0fe9-42ea-bcb1-e34add008937.jpeg"
+    },
+    {
+      "name": "Mateo Petre",
+      "year": "2026-2027",
+      "carta": "Surnom à venir",
+      "role": {
+        "fr": "Tables de conversation ",
+        "es": "Mesas de conversación ",
+        "pt": "Mesas de conversa",
+        "en": "Conversation table"
+      },
+      "origin": "Bolivia",
+      "country": "bolivie",
+      "photo": "/media/7a8600e6-b826-42c5-8216-c0b67d3985a7.jpeg"
     }
   ]
 }
