@@ -52,10 +52,10 @@
         "en": "Dia de los muertos"
       },
       "date": {
-        "fr": "Jeu S9 12 oct • ",
-        "es": "Jue S9 12 oct •",
-        "pt": "Qui S9 12 otu •",
-        "en": "Thu W9 oct 12 •"
+        "fr": "Jeu S9 12 oct • 18h",
+        "es": "Jue S9 12 oct • 18:00",
+        "pt": "Qui S9 12 otu • 18:00",
+        "en": "Thu W9 oct 12 • 6 pm"
       },
       "place": "Salle Joanne Simpson",
       "desc": {
@@ -70,10 +70,14 @@
       "title": {
         "fr": "Conférence ",
         "es": "Conferencia ",
+        "pt": "Conferência",
         "en": "Conference "
       },
       "date": {
-        "fr": "À venir"
+        "fr": "Mer S11 25 nov • 18h30",
+        "es": "Mie S11 25 nov • 18:30",
+        "pt": "Qua S11 25 nov • 18:30",
+        "en": "Wed S11 nov 25 • 6:30 pm"
       },
       "place": "A venir",
       "desc": {
