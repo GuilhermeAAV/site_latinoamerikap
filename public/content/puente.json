@@ -462,6 +462,31 @@
         "en": "former member of the KAP"
       },
       "photo": "/media/Fernando.png"
+    },
+    {
+      "name": "Eloïse Quentin",
+      "status": "alumni",
+      "years": "2024-2026",
+      "role": {
+        "fr": "Ancienne membre ",
+        "es": "Ex Miembro",
+        "pt": "Ex membro",
+        "en": "Former Member"
+      },
+      "origin": "Mexico",
+      "country": "mexique",
+      "lat": 19.4355,
+      "lng": -99.118369,
+      "phone": "+33 666 69 95 18",
+      "email": "eloisequentin02@gmail.com",
+      "instagram": "eloise.qtn",
+      "facebook": "/",
+      "description": {
+        "fr": "Ancienne membre du KAP. On lui dit souvent qu’elle mange n’importe comment à cause des mélanges qu’elle fait provenant de ses différentes cultures culinaires. ",
+        "es": "Ex miembro del KAP. A veces le dicen que come de cualquiera manera porque hace mezclas raras con sus diferentes culturas culinarias. ",
+        "pt": "Ex-membro do KAP. Costuma-se dizer-lhe que ela come de qualquer maneira por causa das misturas que faz de suas diferentes culturas culinárias.",
+        "en": "Former member of the KAP. She is often told that she eats any way because of the mixtures she makes from her different culinary cultures."
+      }
     }
   ]
 }
