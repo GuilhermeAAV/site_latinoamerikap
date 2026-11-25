@@ -438,6 +438,29 @@
         "en": "Member of the KAP. She's part of the team building. Never hesitate to ask her for a hug, she'll give it you with pleasur"
       },
       "photo": "/media/Nam.png"
+    },
+    {
+      "name": "Fernando Miguel",
+      "status": "alumni",
+      "years": "2025-2026",
+      "role": {
+        "fr": "Ancien membre",
+        "es": "Ex miembro",
+        "pt": "Ex membro",
+        "en": "Former member"
+      },
+      "origin": "Sans Salvador ",
+      "lat": 13.69848,
+      "lng": -89.197572,
+      "phone": "+32 490 21 36 42",
+      "email": "fernando.miguel@student.uclouvain.be",
+      "instagram": "fer.miguel04",
+      "description": {
+        "fr": "Ancien membre du KAP",
+        "es": "Ex miembro del KAP",
+        "pt": "Ex membro do KAP",
+        "en": "former "
+      }
     }
   ]
 }
